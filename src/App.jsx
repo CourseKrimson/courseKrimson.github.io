@@ -16,7 +16,7 @@ function App() {
   //   });
   // });
   return (
-    <Router basename='/'>
+    <Router>
       <div className='App'>
       <div className="auth-wrapper">
         <div className="auth-inner">
