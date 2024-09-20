@@ -1,7 +1,7 @@
-function Dashboard() {
+function Home() {
     return (
       <div className="container my-4">
-        <h2 className="text-center mb-4">Course Dashboard</h2>
+        <h2 className="text-center mb-4">Course home</h2>
         <div className="row row-cols-1 row-cols-md-3 g-3">
           <div className="col">
             <div className="card h-100">
@@ -103,5 +103,5 @@ function Dashboard() {
     );
   }
   
-  export default Dashboard;
+  export default Home;
   

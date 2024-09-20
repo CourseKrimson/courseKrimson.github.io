@@ -1,37 +1,57 @@
-// import { useState } from 'react';
-// import { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import Login from './assets/Pages/login';
-// import Register from './assets/Pages/register';
-import Dashboard from './assets/Pages/Dashboard'
-import Register from './assets/Pages/register';
-// import auth from './assets/Pages/firebase'
+import React, { useEffect, useState } from "react";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+
+import Login from "./components/login";
+import SignUp from "./components/register";
+import Home from "./components/home";
+import Profile from "./components/profile";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { auth } from "./components/firebase";
+import Navbar from "./components/Navbar";
 
 function App() {
-  // const [user, setUser] = useState();
-  // useEffect(() => {
-  //   auth.onAuthStateChanged((user) => {
-  //     setUser(user);
-  //   });
-  // });
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      setUser(user); // Set user when logged in
+    });
+
+    return () => unsubscribe(); // Clean up on unmount
+  }, []);
+
   return (
     <Router>
-      <div className='App'>
-      <div className="auth-wrapper">
-        <div className="auth-inner">
-          <Routes>
-            {/* <Route path="/" element={user ? <Navigate to="/profile" /> : <Login />} /> */}
-            <Route path='/' element={<Login/>}/>
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route path='/dashboard' element={<Dashboard />}/>
-            {/* <Route path="/profile" element={user ? <Profile /> : <Navigate to="/login" />} /> */}
-          </Routes>
-          <ToastContainer />
+      <div className="App">
+        {/* Pass user status as loggedin prop to Navbar */}
+        <Navbar loggedin={user ? 'true' : 'false'} />
+        <div className="auth-wrapper">
+          <div className="auth-inner">
+            <Routes>
+              {/* Redirect to profile if the user is logged in */}
+              <Route path="/" element={user ? <Navigate to="/profile" /> : <Login />} />
+              <Route path="/home" element={<Home />} />
+              <Route
+                path="/login"
+                element={user ? <Navigate to="/profile" /> : <Login />}
+              />
+              <Route path="/register" element={<SignUp />} />
+              <Route
+                path="/profile"
+                element={user ? <Profile /> : <Navigate to="/login" />}
+              />
+            </Routes>
+            <ToastContainer />
+          </div>
         </div>
-      </div>
       </div>
     </Router>
   );

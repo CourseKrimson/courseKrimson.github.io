@@ -1,9 +1,8 @@
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { useState } from "react";
+import React, { useState } from "react";
 import { auth } from "./firebase";
 import { toast } from "react-toastify";
-import { Link } from 'react-router-dom'; // Import Link for routing
-import Navbar from '../Components/Navbar';
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -14,7 +13,7 @@ function Login() {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       console.log("User logged in Successfully");
-      window.location.href = "/dashboard";
+      window.location.href = "/profile"; // Keep this as it is if using a full page reload
       toast.success("User logged in Successfully", {
         position: "top-center",
       });
@@ -28,11 +27,10 @@ function Login() {
 
   return (
     <>
-      <Navbar />
       <form onSubmit={handleSubmit} className="container mt-5 w-25">
-        <h3 className="text-center mb-2">Login</h3>
+        <h3>Login</h3>
 
-        <div data-mdb-input-init className="form-outline mb-4">
+        <div className="mb-3">
           <label>Email address</label>
           <input
             type="email"
@@ -43,7 +41,7 @@ function Login() {
           />
         </div>
 
-        <div data-mdb-input-init className="form-outline mb-4">
+        <div className="mb-3">
           <label>Password</label>
           <input
             type="password"
@@ -55,14 +53,14 @@ function Login() {
         </div>
 
         <div className="d-grid">
-          <button type="submit" className="btn btn-primary mb-3">
+          <button type="submit" className="btn btn-primary">
             Submit
           </button>
         </div>
-
         <p className="forgot-password text-right">
-          New user? <Link to="/register">Register Here</Link> {/* Replaced <a> with <Link> */}
+          New user? <Link to="/register">Register Here</Link> {/* Use Link here */}
         </p>
+        {/* <SignInwithGoogle/> */}
       </form>
     </>
   );

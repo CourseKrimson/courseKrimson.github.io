@@ -1,14 +1,14 @@
-import  { useEffect, useState } from "react";
-import { auth} from "./firebase";
+import React, { useEffect, useState } from "react";
+import { auth, db } from "./firebase";
 import { doc, getDoc } from "firebase/firestore";
-
+import Navbar from "./Navbar";
 function Profile() {
   const [userDetails, setUserDetails] = useState(null);
   const fetchUserData = async () => {
     auth.onAuthStateChanged(async (user) => {
       console.log(user);
 
-      const docRef = doc( "Users", user.uid);
+      const docRef = doc(db, "Users", user.uid);
       const docSnap = await getDoc(docRef);
       if (docSnap.exists()) {
         setUserDetails(docSnap.data());
@@ -33,6 +33,7 @@ function Profile() {
   }
   return (
     <div>
+      {/* <Navbar loggedin='true'></Navbar> */}
       {userDetails ? (
         <>
           <div style={{ display: "flex", justifyContent: "center" }}>
