@@ -16,7 +16,9 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { auth } from "./components/firebase";
 import Navbar from "./components/Navbar";
-
+import CourseDetail from "./components/CourseDetail";
+import Dashboard from "./components/dashboard";
+import courses from "./components/courseData";
 function App() {
   const [user, setUser] = useState(null);
 
@@ -48,6 +50,9 @@ function App() {
                 path="/profile"
                 element={user ? <Profile /> : <Navigate to="/login" />}
               />
+<Route path="/courses/:courseName" element={<CourseDetail />} />
+<Route path="/" element={<Dashboard courses={courses} />} />
+<Route path="/courses/:courseName" element={<CourseDetail />} />
             </Routes>
             <ToastContainer />
           </div>
