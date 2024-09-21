@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import courses from './courseData'; // Ensure the path is correct
+import YouTubeEmbed from './YouTubeEmbed';
 
 function CourseDetail() {
   const { courseName } = useParams();
@@ -27,6 +28,7 @@ function CourseDetail() {
       <img src={course.image} alt={course.title} className="img-fluid" />
       <p>{course.description}</p>
       <h4>Course Content:</h4>
+      <YouTubeEmbed videoId='8lEsbcUSoU8' />
       <p>{formatContent(course.content)}</p>
     </div>
   );
