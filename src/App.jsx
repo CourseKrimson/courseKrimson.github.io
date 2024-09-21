@@ -6,6 +6,7 @@ import {
   Routes,
   Route,
   Navigate,
+  useLocation
 } from 'react-router-dom';
 
 import Login from './components/login';
@@ -30,9 +31,21 @@ function App() {
 
     return () => unsubscribe(); // Clean up on unmount
   }, []);
+// Handle redirects from GitHub Pages 404 fallback
+function RedirectWithState() {
+  const location = useLocation();
+  useEffect(() => {
+    const redirectPath = new URLSearchParams(location.search).get('redirect');
+    if (redirectPath) {
+      window.history.replaceState({}, '', redirectPath);
+    }
+  }, [location]);
+  return null;
+}
 
   return (
     <Router>
+      <RedirectWithState />
       <div className="App">
         {/* Pass user status as loggedin prop to Navbar */}
         <Navbar loggedin={user ? 'true' : 'false'} />
