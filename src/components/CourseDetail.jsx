@@ -5,10 +5,10 @@ import courses from './courseData'; // Ensure the path is correct
 function CourseDetail() {
   const { courseName } = useParams();
 
-  // Convert hyphenated URL back to the course key in the data (lowercase for matching)
-  const courseKey = courseName.replace(/-/g, ' ').toLowerCase();
+  // Convert the URL back to the sanitized course key
+  const courseKey = courseName.toLowerCase(); // Ensures proper formatting
 
-  const course = courses[courseKey]; // Lookup using the course key
+  const course = courses[courseKey]; // Lookup using the sanitized course key
 
   if (!course) {
     return <h2 className="text-center">Course not found</h2>;

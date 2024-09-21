@@ -1,24 +1,25 @@
-import React, { useEffect, useState } from "react";
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
+import React, { useEffect, useState } from 'react';
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Navigate,
-} from "react-router-dom";
+} from 'react-router-dom';
 
-import Login from "./components/login";
-import SignUp from "./components/register";
-import Home from "./components/home";
-import Profile from "./components/profile";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { auth } from "./components/firebase";
-import Navbar from "./components/Navbar";
-import CourseDetail from "./components/CourseDetail";
-import Dashboard from "./components/dashboard";
-import courses from "./components/courseData";
+import Login from './components/login';
+import SignUp from './components/register';
+import Home from './components/home';
+import Profile from './components/profile';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { auth } from './components/firebase';
+import Navbar from './components/Navbar';
+import CourseDetail from './components/CourseDetail';
+import Dashboard from './components/dashboard';
+import courses from './components/courseData';
+
 function App() {
   const [user, setUser] = useState(null);
 
@@ -50,9 +51,8 @@ function App() {
                 path="/profile"
                 element={user ? <Profile /> : <Navigate to="/login" />}
               />
-<Route path="/courses/:courseName" element={<CourseDetail />} />
-<Route path="/" element={<Dashboard courses={courses} />} />
-<Route path="/courses/:courseName" element={<CourseDetail />} />
+              <Route path="/courses/:courseName" element={<CourseDetail />} />
+              <Route path="/" element={<Dashboard courses={courses} />} />
             </Routes>
             <ToastContainer />
           </div>

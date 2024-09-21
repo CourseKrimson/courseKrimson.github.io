@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Dashboard({ courses }) {
-  if (!courses || courses.length === 0) {
-    return <h2 className="text-center">No courses available</h2>;
+  if (!courses || Object.keys(courses).length === 0) {
+    return <h2 className="text-center">No courses available!</h2>;
   }
 
   return (
@@ -12,10 +12,10 @@ function Dashboard({ courses }) {
       <div className="container my-4">
         <h2 className="text-center mb-4">Course Home</h2>
         <div className="row row-cols-1 row-cols-md-3 g-3">
-          {courses.map((course, index) => (
+          {Object.entries(courses).map(([key, course], index) => (
             <div className="col" key={index}>
               <div className="card h-100">
-                <Link to={`/courses/${course.title.replace(/\s+/g, '-').toLowerCase()}`}>
+                <Link to={`/courses/${key}`}>
                   <img src={course.image} className="card-img-top" alt={course.title} />
                   <div className="card-body">
                     <h5 className="card-title">{course.title}</h5>

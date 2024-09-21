@@ -24,8 +24,11 @@
   color: white;
 }
 a {
-    color: rgb(186 22 163) !important;
-    text-decoration: none !important;
+    color: rgb(186 22 163) ;
+    text-decoration: none ;
+}
+.clk{
+background: rgb(186 22 163) !important;
 }
 
 .App-link {
