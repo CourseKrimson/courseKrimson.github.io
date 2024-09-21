@@ -44,7 +44,7 @@ function RedirectWithState() {
 }
 
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <RedirectWithState />
       <div className="App">
         {/* Pass user status as loggedin prop to Navbar */}
