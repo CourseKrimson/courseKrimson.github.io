@@ -4,15 +4,22 @@ import courses from './courseData'; // Ensure the path is correct
 
 function CourseDetail() {
   const { courseName } = useParams();
-
-  // Convert the URL back to the sanitized course key
-  const courseKey = courseName.toLowerCase(); // Ensures proper formatting
-
+  const courseKey = courseName.toLowerCase(); // Ensure proper formatting
   const course = courses[courseKey]; // Lookup using the sanitized course key
 
   if (!course) {
     return <h2 className="text-center">Course not found</h2>;
   }
+
+  // Function to convert newlines to <br />
+  const formatContent = (content) => {
+    return content.split('\n').map((line, index) => (
+      <span key={index}>
+        {line}
+        <br />
+      </span>
+    ));
+  };
 
   return (
     <div className="container mt-5">
@@ -20,7 +27,7 @@ function CourseDetail() {
       <img src={course.image} alt={course.title} className="img-fluid" />
       <p>{course.description}</p>
       <h4>Course Content:</h4>
-      <p>{course.content}</p>
+      <p>{formatContent(course.content)}</p>
     </div>
   );
 }
