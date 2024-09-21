@@ -9,6 +9,7 @@ const courses = {
       \n- Automating CI/CD pipelines
       \n- Managing workflows with YAML files
       \n- Integrating with third-party services
+      \n So, Lets get started
     `,
   },
   'course 2: github pages guide': {
