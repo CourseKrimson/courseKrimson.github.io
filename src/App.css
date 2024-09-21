@@ -23,7 +23,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-a {
+.lnk {
     color: rgb(186 22 163) ;
     text-decoration: none ;
 }
