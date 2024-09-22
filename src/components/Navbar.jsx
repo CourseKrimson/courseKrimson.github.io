@@ -40,9 +40,9 @@ function Navbar({ loggedin }) {
               <input type="text" className="form-control form-control-sm" placeholder="Search" />
             </form>
             {loggedin === 'true' ? (
-              <Link className="btn btn-primary clk" to="/profile">Profile</Link>
+              <Link className="btn btn-primary clk" to="/profile">Profile </Link>
             ) : (
-              <Link className="btn btn-primary clk" to="/login">Sign up</Link>
+              <Link className="btn btn-primary clk" to="/login">Sign up </Link>
             )}
           </div>
         </div>
