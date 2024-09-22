@@ -12,9 +12,16 @@ function Navbar({ loggedin }) {
         <Link className="navbar-brand" to="/"><img src={logo} width="36" alt="Logo" /></Link>
         <div className="collapse navbar-collapse" id="navbarExample">
           <ul className="navbar-nav me-auto mb-0">
-            <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
-            </li>
+            {loggedin === 'true' ? (
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
+              </li>
+              ) : (
+                <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+              </li>
+            )}
+
             <li className="nav-item">
               <Link className="nav-link" aria-current="page" to="/events">Events</Link>
             </li>
