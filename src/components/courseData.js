@@ -65,7 +65,7 @@ const courses = {
       \n- Connecting domains with GitHub Pages or other platforms
     `,
   },
-  'course 6: how to: discord bot?': {
+  'course 6: how to: discord bot': {
     title: 'Course 6: How to Build a Discord Bot?',
     image: 'https://dummyimage.com/600x400/000/fff&text=Discord+Bot',
     description: 'Learn how to create and deploy a Discord bot using JavaScript.',
@@ -78,7 +78,7 @@ const courses = {
       \n- Deploying the bot to a server
     `,
   },
-  'course 7: how to: telegram bot?': {
+  'course 7: how to: telegram bot': {
     title: 'Course 7: How to Build a Telegram Bot?',
     image: 'https://dummyimage.com/600x400/000/fff&text=Telegram+Bot',
     description: 'Create and manage a Telegram bot using the Telegram Bot API.',
@@ -176,7 +176,7 @@ const courses = {
       \n- Tools for monitoring and improving indexing
     `,
   },
-  'course 15: why to use codespace?': {
+  'course 15: why to use codespace': {
     title: 'Course 15: Why Use Codespace?',
     image: 'https://dummyimage.com/600x400/000/fff&text=Codespace',
     description: 'Learn why Codespace is essential for cloud-based development.',
@@ -200,7 +200,7 @@ const courses = {
       \n- Prototyping workflows for web development
     `,
   },
-  'course 17: how to request a pull request?': {
+  'course 17: how to request a pull request': {
     title: 'Course 17: How to Request a Pull Request?',
     image: 'https://dummyimage.com/600x400/000/fff&text=Pull+Request',
     description: 'Master the process of contributing to open-source projects via pull requests.',
