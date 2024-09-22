@@ -32,7 +32,7 @@ function Profile() {
     }
   }
   return (
-    <div>
+    <div className="text-center">
       {/* <Navbar loggedin='true'></Navbar> */}
       {userDetails ? (
         <>

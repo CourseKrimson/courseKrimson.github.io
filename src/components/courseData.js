@@ -1,6 +1,7 @@
 const courses = {
   'course 1: github action setup': {
     title: 'Course 1: GitHub Action Setup',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=GitHub+Action',
     description: 'Learn how to automate your development workflows with GitHub Actions.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -15,6 +16,7 @@ const courses = {
   },
   'course 2: github pages guide': {
     title: 'Course 2: GitHub Pages Guide',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=GitHub+Pages',
     description: 'Deploy static websites using GitHub Pages.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -28,6 +30,7 @@ const courses = {
   },
   'course 3: introduction to firebase': {
     title: 'Course 3: Introduction to Firebase',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=Firebase',
     description: 'Get started with Firebase to build modern web and mobile apps.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -41,6 +44,7 @@ const courses = {
   },
   'course 4: working with cloudflare': {
     title: 'Course 4: Working with Cloudflare',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=Cloudflare',
     description: 'Learn how to use Cloudflare to enhance website performance and security.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -54,6 +58,7 @@ const courses = {
   },
   'course 5: everything you need to know about domain hosting': {
     title: 'Course 5: Everything You Need to Know About Domain Hosting',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=Domain+Hosting',
     description: 'A comprehensive guide to understanding domain registration and hosting.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -67,6 +72,7 @@ const courses = {
   },
   'course 6: how to: discord bot': {
     title: 'Course 6: How to Build a Discord Bot?',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=Discord+Bot',
     description: 'Learn how to create and deploy a Discord bot using JavaScript.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -80,6 +86,7 @@ const courses = {
   },
   'course 7: how to: telegram bot': {
     title: 'Course 7: How to Build a Telegram Bot?',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=Telegram+Bot',
     description: 'Create and manage a Telegram bot using the Telegram Bot API.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -93,6 +100,7 @@ const courses = {
   },
   'course 8: using webhooks for dev': {
     title: 'Course 8: Using Webhooks for Dev',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=Webhooks',
     description: 'Master the art of integrating webhooks into your applications.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -106,6 +114,7 @@ const courses = {
   },
   'course 9: oh my zsh setup': {
     title: 'Course 9: OH MY ZSH Setup',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=ZSH+Setup',
     description: 'Enhance your terminal experience with OH MY ZSH.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -118,6 +127,7 @@ const courses = {
   },
   'course 10: learn to customize terminal': {
     title: 'Course 10: Learn to Customize Terminal',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=Customize+Terminal',
     description: 'Learn how to create a productive and visually appealing terminal environment.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -130,6 +140,7 @@ const courses = {
   },
   'course 11: windows operational': {
     title: 'Course 11: Windows Operational',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=Windows+Operational',
     description: 'A complete guide to operating and optimizing your Windows system for development.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -142,6 +153,7 @@ const courses = {
   },
   'course 12: linux for devs': {
     title: 'Course 12: Linux for Devs',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=Linux+for+Devs',
     description: 'Master Linux commands and workflows for software development.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -154,6 +166,7 @@ const courses = {
   },
   'course 13: portfolio development': {
     title: 'Course 13: Portfolio Development',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=Portfolio+Development',
     description: 'Build and showcase your skills with a professional online portfolio.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -166,6 +179,7 @@ const courses = {
   },
   'course 14: guide to page indexing': {
     title: 'Course 14: Guide to Page Indexing',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=Page+Indexing',
     description: 'Understand the process and importance of search engine indexing.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -178,6 +192,7 @@ const courses = {
   },
   'course 15: why to use codespace': {
     title: 'Course 15: Why Use Codespace?',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=Codespace',
     description: 'Learn why Codespace is essential for cloud-based development.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -190,6 +205,7 @@ const courses = {
   },
   'course 16: website prototype designing': {
     title: 'Course 16: Website Prototype Designing',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=Prototype+Designing',
     description: 'Learn the principles of website prototyping and user interface design.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -202,6 +218,7 @@ const courses = {
   },
   'course 17: how to request a pull request': {
     title: 'Course 17: How to Request a Pull Request?',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=Pull+Request',
     description: 'Master the process of contributing to open-source projects via pull requests.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -214,6 +231,7 @@ const courses = {
   },
   'course 18: working with readme': {
     title: 'Course 18: Working with README',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=README',
     description: 'Learn to create clear and effective README files for your projects.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -226,6 +244,7 @@ const courses = {
   },
   'course 19: code websites in snaps (bootstrap)': {
     title: 'Course 19: Code Websites in Snaps (Bootstrap)',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=Bootstrap',
     description: 'Learn to build responsive websites quickly using Bootstrap.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -238,6 +257,7 @@ const courses = {
   },
   'course 20: code websites in snaps (tailwind)': {
     title: 'Course 20: Code Websites in Snaps (Tailwind)',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=Tailwind',
     description: 'Create modern websites quickly with Tailwind CSS.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -250,6 +270,7 @@ const courses = {
   },
   'course 21: fix browser routing in gh pages': {
     title: 'Course 21: Fix Browser Routing in GH Pages',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=Browser+Routing',
     description: 'Learn how to fix common routing issues in GitHub Pages.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -261,6 +282,7 @@ const courses = {
   },
   'course 22: centering an element': {
     title: 'Course 22: Centering an Element',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=Centering',
     description: 'Learn how to center elements using CSS.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -273,6 +295,7 @@ const courses = {
   },
   'course 23: convert raw json data to web interface': {
     title: 'Course 23: Convert Raw JSON Data to Web Interface',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=JSON+to+Web',
     description: 'Learn to display and manipulate JSON data on your website.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -285,6 +308,7 @@ const courses = {
   },
   'course 24: working with linux in windows wsl': {
     title: 'Course 24: Working with Linux in Windows WSL',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=WSL',
     description: 'Learn to use the Windows Subsystem for Linux (WSL) for development.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -297,6 +321,7 @@ const courses = {
   },
   'course 25: designing cli with ascii characters': {
     title: 'Course 25: Designing CLI with ASCII Characters',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=CLI+Design',
     description: 'Learn how to make your CLI programs visually appealing with ASCII.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -309,6 +334,7 @@ const courses = {
   },
   'course 26: hosting a free site': {
     title: 'Course 26: Hosting a Free Site',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=Free+Hosting',
     description: 'Learn how to host a website for free using popular platforms.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -321,6 +347,7 @@ const courses = {
   },
   'course 27: registering a free domain': {
     title: 'Course 27: Registering a Free Domain',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=Free+Domain',
     description: 'Learn how to get a free domain for your website.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -333,6 +360,7 @@ const courses = {
   },
   'course 28: using modules in several languages': {
     title: 'Course 28: Using Modules in Several Languages',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=Modules',
     description: 'Learn to use and create modules across different programming languages.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -345,6 +373,7 @@ const courses = {
   },
   'course 29: getting started in cybersec: kid package': {
     title: 'Course 29: Getting Started in Cybersecurity: Kid Package',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=Cybersecurity+Basics',
     description: 'An introductory guide to cybersecurity for beginners.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -357,6 +386,7 @@ const courses = {
   },
   'course 30: python for web scraping': {
     title: 'Course 30: Python for Web Scraping',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=Web+Scraping',
     description: 'Learn to extract data from websites using Python.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -369,6 +399,7 @@ const courses = {
   },
   'course 31: automate arduino speech recognition based project': {
     title: 'Course 31: Automate Arduino Speech Recognition Based Project',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=Arduino+Speech+Recognition',
     description: 'Learn to create an Arduino project with speech recognition features.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
@@ -381,6 +412,7 @@ const courses = {
   },
   'course 32: android debug bridge for devs': {
     title: 'Course 32: Android Debug Bridge (ADB) for Devs',
+    author: 'Dev Gautam Kumar',    
     image: 'https://dummyimage.com/600x400/000/fff&text=Android+ADB',
     description: 'Learn how to use Android Debug Bridge (ADB) for app development and debugging.',
     ytb_vid:`https://www.youtube.com/watch?v=8lEsbcUSoU8`,
