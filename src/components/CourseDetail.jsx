@@ -28,7 +28,7 @@ function CourseDetail() {
       <img src={course.image} alt={course.title} className="img-fluid" />
       <p>{course.description}</p>
       <h4>Course Content:</h4>
-      <YouTubeEmbed videoId='8lEsbcUSoU8' />
+      <YouTubeEmbed videoId='C7bHn1ZZCXI' />
       <p>{formatContent(course.content)}</p>
     </div>
   );
