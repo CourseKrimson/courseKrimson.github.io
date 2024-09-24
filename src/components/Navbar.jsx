@@ -17,7 +17,7 @@ function Navbar({ loggedin }) {
     if (searchTerm) {
       // Redirect to the search results page with the search term
       navigate(`/search?query=${encodeURIComponent(searchTerm)}`);
-      setSearchTerm(''); // Clear the input after submission
+      // setSearchTerm(''); // Clear the input after submission
     }
   };
 
@@ -55,13 +55,23 @@ function Navbar({ loggedin }) {
           </ul>
           <div className="d-flex align-items-center flex-column flex-lg-row">
             <form className="me-2 mb-2 mb-lg-0" onSubmit={handleSearchSubmit}>
-              <input 
-                type="text" 
-                className="form-control form-control-sm" 
-                placeholder="Search" 
-                value={searchTerm} 
-                onChange={handleSearchChange} 
-              />
+              <div class="input-group">
+                <span class="input-group-text" id="basic-addon1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
+                  </svg>
+                </span>
+                {/* <input type="text" class="form-control" placeholder="Input group example" /> */}
+          
+              <input
+                type="text"
+                className="form-control"
+                //  aria-label="Input group example" 
+                //  aria-describedby="basic-addon1"
+                placeholder="Search"
+                value={searchTerm}
+                onChange={handleSearchChange}
+              />  </div>
             </form>
             {loggedin === 'true' ? (
               <Link className="btn btn-primary clk" to="/profile">Profile </Link>

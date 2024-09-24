@@ -43,3 +43,13 @@ background: rgb(186 22 163) !important;
     transform: rotate(360deg);
   }
 }
+/* Default state for search input */
+.input-group .form-control {
+  width: 150px;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Expanded state when the input is focused */
+.search-expanded .form-control {
+  width: 300px; /* You can adjust this width */
+}
