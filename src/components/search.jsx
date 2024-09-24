@@ -19,12 +19,11 @@ function SearchResults() {
   return (
     <div className="container mt-5">
       <h2>Search Results for "{searchTerm}"</h2>
-      {filteredCourses.length > 0 ? (
-        <div className="row row-cols-1 row-cols-md-3 g-3">
-          {filteredCourses.map((course, index) => (
+      <div className="row row-cols-1 row-cols-md-3 g-3">
+          {Object.entries(courses).map(([key, course], index) => (
             <div className="col" key={index}>
               <div className="card h-100">
-                <Link to={`/courses/${course.title.replace(/\s+/g, '-').toLowerCase()}`} className='lnk'>
+                <Link to={`/courses/${key}`} className='lnk'>
                   <img src={course.image} className="card-img-top" alt={course.title} />
                   <div className="card-body">
                     <h5 className="card-title">{course.title}</h5>
@@ -34,6 +33,7 @@ function SearchResults() {
               </div>
             </div>
           ))}
+        </div>
         </div>
       ) : (
         <h4 className="text-center">No results found</h4>
