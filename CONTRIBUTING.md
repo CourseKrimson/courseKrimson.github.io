@@ -1,4 +1,4 @@
-<h1>Contributing to [Your Project Name]</h1>
+<h1>Contributing to CourseKrimson/courseKrimson.github.io </h1>
 
 <p>Thank you for taking the time to contribute to this project! We value your input and hope the following guidelines will help you understand how best to collaborate with us.</p>
 
