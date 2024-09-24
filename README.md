@@ -20,7 +20,7 @@
 <ul>
   <li>Node.js (v12+)</li>
   <li>NPM or Yarn</li>
-  <li>Basic knowledge of React</li>
+  <li>Basic knowledge of React and Vite</li>
 </ul>
 
 <h2 id="installation">Installation</h2>
@@ -54,7 +54,7 @@ npm install
 <h2 id="running-the-project">Running the Project</h2>
 <p>After installation, you can run the project locally:</p>
 <pre><code># Start the development server
-npm start
+npm run dev
 </code></pre>
 
 <h2 id="contributing">Contributing</h2>
