@@ -34,11 +34,7 @@ function SearchResults() {
             </div>
           ))}
         </div>
-        </div>
-      ) : (
-        <h4 className="text-center">No results found</h4>
-      )}
-    </div>
+      </div>
   );
 }
 
