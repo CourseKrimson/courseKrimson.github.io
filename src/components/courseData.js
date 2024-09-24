@@ -424,5 +424,18 @@ const courses = {
       \n- Designing immersive user experiences
     `,
   },
+'course 33: introduction to programming': {
+    title: 'Course 33: Introduction to Programming',
+    author: 'Dev Gautam Kumar',
+    image: 'https://dummyimage.com/600x400/FF9800/fff&text=Programming+Basics', // Orange for creativity
+    description: 'Learn the fundamentals of programming and problem-solving techniques.',
+    ytb_vid: 'https://www.youtube.com/watch?v=Z1Yd7upQsXY',
+    content: `
+      This course will introduce you to:
+      \n- Basic programming concepts and logic
+      \n- Writing your first code in Python
+      \n- Problem-solving strategies
+    `,
+},
 };
 export default courses;
