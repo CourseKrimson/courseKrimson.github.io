@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from '../assets/images/logo.png';
 import { Link, useNavigate } from 'react-router-dom'; // Import Link and useNavigate from react-router-dom
 
@@ -11,15 +11,13 @@ function Navbar({ loggedin }) {
     setSearchTerm(event.target.value);
   };
 
-  // Handle search submission
-  const handleSearchSubmit = (event) => {
-    event.preventDefault(); // Prevent page refresh
+  // Use effect to trigger navigation whenever the search term changes
+  useEffect(() => {
     if (searchTerm) {
-      // Redirect to the search results page with the search term
+      // Navigate to search page as the user types
       navigate(`/search?query=${encodeURIComponent(searchTerm)}`);
-      // setSearchTerm(''); // Clear the input after submission
     }
-  };
+  }, [searchTerm, navigate]); // Trigger effect when searchTerm or navigate changes
 
   return (
     <nav className="navbar navbar-expand-lg">
@@ -54,29 +52,26 @@ function Navbar({ loggedin }) {
             </li>
           </ul>
           <div className="d-flex align-items-center flex-column flex-lg-row">
-            <form className="me-2 mb-2 mb-lg-0" onSubmit={handleSearchSubmit}>
-              <div class="input-group">
-                <span class="input-group-text" id="basic-addon1">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <div className="me-2 mb-2 mb-lg-0">
+              <div className="input-group">
+                <span className="input-group-text" id="basic-addon1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
                   </svg>
                 </span>
-                {/* <input type="text" class="form-control" placeholder="Input group example" /> */}
-          
-              <input
-                type="text"
-                className="form-control"
-                //  aria-label="Input group example" 
-                //  aria-describedby="basic-addon1"
-                placeholder="Search"
-                value={searchTerm}
-                onChange={handleSearchChange}
-              />  </div>
-            </form>
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Search"
+                  value={searchTerm}
+                  onChange={handleSearchChange}
+                />
+              </div>
+            </div>
             {loggedin === 'true' ? (
-              <Link className="btn btn-primary clk" to="/profile">Profile </Link>
+              <Link className="btn btn-primary clk" to="/profile">Profile</Link>
             ) : (
-              <Link className="btn btn-primary clk" to="/login">Sign up </Link>
+              <Link className="btn btn-primary clk" to="/login">Sign up</Link>
             )}
           </div>
         </div>
