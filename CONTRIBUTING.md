@@ -4,7 +4,7 @@
 
 <h2>Table of Contents</h2>
 <ol>
-  <li><a href="#code-of-conduct">Code of Conduct</a></li>
+  <li><a href="https://github.com/CourseKrimson/courseKrimson.github.io/tree/main?tab=coc-ov-file#readme">Code of Conduct</a></li>
   <li><a href="#how-can-i-contribute">How Can I Contribute?</a>
     <ul>
       <li><a href="#reporting-bugs">Reporting Bugs</a></li>
