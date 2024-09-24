@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import './index.css';
 import {
   BrowserRouter as Router,
   Routes,
@@ -8,7 +9,7 @@ import {
   Navigate,
   useLocation
 } from 'react-router-dom';
-
+import SearchResults from './components/search';
 import Login from './components/login';
 import SignUp from './components/register';
 import Home from './components/home';
@@ -31,17 +32,17 @@ function App() {
 
     return () => unsubscribe(); // Clean up on unmount
   }, []);
-// Handle redirects from GitHub Pages 404 fallback
-// function RedirectWithState() {
-//   const location = useLocation();
-//   useEffect(() => {
-//     const redirectPath = new URLSearchParams(location.search).get('redirect');
-//     if (redirectPath) {
-//       window.history.replaceState({}, '', redirectPath);
-//     }
-//   }, [location]);
-//   return null;
-// }
+  // Handle redirects from GitHub Pages 404 fallback
+  // function RedirectWithState() {
+  //   const location = useLocation();
+  //   useEffect(() => {
+  //     const redirectPath = new URLSearchParams(location.search).get('redirect');
+  //     if (redirectPath) {
+  //       window.history.replaceState({}, '', redirectPath);
+  //     }
+  //   }, [location]);
+  //   return null;
+  // }
 
   return (
     <Router basename={import.meta.env.BASE_URL}>
@@ -66,6 +67,8 @@ function App() {
               />
               <Route path="/courses/:courseName" element={<CourseDetail />} />
               <Route path="/" element={<Dashboard courses={courses} />} />
+              <Route path="/search" element={<SearchResults />} />
+
             </Routes>
             <ToastContainer />
           </div>

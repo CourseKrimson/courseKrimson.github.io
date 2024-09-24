@@ -1,7 +1,26 @@
+import React, { useState } from 'react';
 import logo from '../assets/images/logo.png';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link, useNavigate } from 'react-router-dom'; // Import Link and useNavigate from react-router-dom
 
 function Navbar({ loggedin }) {
+  const [searchTerm, setSearchTerm] = useState(''); // State for search term
+  const navigate = useNavigate(); // useNavigate for navigation
+
+  // Handle search input change
+  const handleSearchChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  // Handle search submission
+  const handleSearchSubmit = (event) => {
+    event.preventDefault(); // Prevent page refresh
+    if (searchTerm) {
+      // Redirect to the search results page with the search term
+      navigate(`/search?query=${encodeURIComponent(searchTerm)}`);
+      setSearchTerm(''); // Clear the input after submission
+    }
+  };
+
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
@@ -16,12 +35,11 @@ function Navbar({ loggedin }) {
               <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
               </li>
-              ) : (
-                <li className="nav-item">
+            ) : (
+              <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" to="/">Home</Link>
               </li>
             )}
-
             <li className="nav-item">
               <Link className="nav-link" aria-current="page" to="/events">Events</Link>
             </li>
@@ -36,8 +54,14 @@ function Navbar({ loggedin }) {
             </li>
           </ul>
           <div className="d-flex align-items-center flex-column flex-lg-row">
-            <form className="me-2 mb-2 mb-lg-0">
-              <input type="text" className="form-control form-control-sm" placeholder="Search" />
+            <form className="me-2 mb-2 mb-lg-0" onSubmit={handleSearchSubmit}>
+              <input 
+                type="text" 
+                className="form-control form-control-sm" 
+                placeholder="Search" 
+                value={searchTerm} 
+                onChange={handleSearchChange} 
+              />
             </form>
             {loggedin === 'true' ? (
               <Link className="btn btn-primary clk" to="/profile">Profile </Link>
