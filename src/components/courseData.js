@@ -6,13 +6,126 @@ const courses = {
     description: 'Learn how to automate your development workflows with GitHub Actions.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      \n # This course will cover:
-      \n- Setting up GitHub Actions
-      \n- Automating CI/CD pipelines
-      \n- Managing workflows with YAML files
-      \n- Integrating with third-party services
-      \nSo, let's get started!
-    `,
+          \n# Course 1: GitHub Action Setup\n
+          Welcome to the GitHub Action Setup course! This course is designed for beginners who want to learn how to automate their development workflows using GitHub Actions.\n In this comprehensive guide, we will explore what GitHub Actions are, why they are useful, and how you can set them up to streamline your development process.\n\n
+  
+          \n## What are GitHub Actions?\n
+          GitHub Actions is a CI/CD (Continuous Integration/Continuous Deployment) tool that allows you to automate your software development workflows directly in your GitHub repository.\n With GitHub Actions, you can create custom workflows that trigger automatically in response to specific events, such as code pushes, pull requests, or issue comments.\n This enables developers to perform tasks like building, testing, and deploying code without manual intervention, making the development process more efficient and reliable.\n\n
+  
+          \n## Why Use GitHub Actions?\n
+          The adoption of GitHub Actions comes with numerous benefits:\n
+  
+          \n- **Efficiency:** Automation saves time and reduces the likelihood of human errors.\n By automating repetitive tasks, developers can focus on writing code and improving their applications instead of performing manual checks and deployments.\n\n
+            
+          \n- **Continuous Integration:** GitHub Actions allows you to set up CI workflows that automatically run tests and builds whenever you push code.\n This ensures that your code is always in a deployable state and helps catch issues early in the development cycle.\n\n
+  
+          \n- **Flexibility:** With GitHub Actions, you can customize workflows to fit your development process.\n Whether you want to run tests, deploy applications, or send notifications, you can define the exact sequence of steps that should occur.\n\n
+  
+          \n- **Integration with Other Services:** GitHub Actions seamlessly integrates with various third-party services, including cloud providers like AWS, Azure, and Google Cloud, as well as communication tools like Slack and Discord.\n This makes it easy to incorporate additional functionality into your workflows.\n\n
+  
+          \n## Getting Started with GitHub Actions\n
+          To start using GitHub Actions, you will need a GitHub account and a repository where you want to set up your workflows.\n Once you have that, follow these steps to create your first GitHub Action:\n
+  
+          \n### Step 1: Create a Workflow File\n
+          In your GitHub repository, navigate to the "Actions" tab.\n You’ll see a prompt to set up a new workflow.\n You can choose from a template or create a new file.\n The workflow file is written in YAML format and typically resides in the .\ngithub/workflows directory of your repository.\n\n
+  
+          \nHere’s a basic example of a workflow file:\n
+  
+          \nname: CI\n
+  
+          \non:\n
+          \n  push:\n
+          \n    branches:\n
+          \n      - main\n
+  
+          \njobs:\n
+          \n  build:\n
+          \n    runs-on: ubuntu-latest\n
+  
+          \n    steps:\n
+          \n      - name: Checkout code\n
+          \n        uses: actions/checkout@v2\n
+  
+          \n      - name: Set up Node.\njs\n
+          \n        uses: actions/setup-node@v2\n
+          \n        with:\n
+          \n          node-version: '14'\n
+  
+          \n      - name: Install dependencies\n
+          \n        run: npm install\n
+  
+          \n      - name: Run tests\n
+          \n        run: npm test\n
+  
+          \nThis workflow is triggered on every push to the main branch.\n It defines a single job called build, which runs on the latest version of Ubuntu.\n The steps in the job include checking out the code, setting up Node.\njs, installing dependencies, and running tests.\n\n
+  
+          \n### Step 2: Understanding Workflow Triggers\n
+          Workflows can be triggered by various GitHub events, such as pushes, pull requests, or scheduled times.\n In the example above, the workflow is triggered by a push event to the main branch.\n
+  
+          \n### Step 3: Customizing Your Workflows\n
+          You can add additional jobs to your workflow to handle different tasks, such as deploying your application or running code quality checks. Each job can have its own set of steps, and you can specify dependencies between jobs if needed.\n
+  
+          \nHere’s an extended example that includes a deployment step:\n
+  
+          \nname: CI\n
+  
+          \non:\n
+          \n  push:\n
+          \n    branches:\n
+          \n      - main\n
+  
+          \njobs:\n
+          \n  build:\n
+          \n    runs-on: ubuntu-latest\n
+  
+          \n    steps:\n
+          \n      - name: Checkout code\n
+          \n        uses: actions/checkout@v2\n
+  
+          \n      - name: Set up Node.js\n
+          \n        uses: actions/setup-node@v2\n
+          \n        with:\n
+          \n          node-version: '14'\n
+  
+          \n      - name: Install dependencies\n
+          \n        run: npm install\n
+  
+          \n      - name: Run tests\n
+          \n        run: npm test\n
+  
+          \n  deploy:\n
+          \n    runs-on: ubuntu-latest\n
+          \n    needs: build\n
+  
+          \n    steps:\n
+          \n      - name: Deploy to Production\n
+          \n        run: |\n
+          \n          echo "Deploying application..."\n
+          \n          # Add your deployment commands here\n
+  
+          \nIn this example, the deploy job is defined to run after the build job completes successfully. You can replace the deployment commands with your actual deployment process, whether it’s pushing to a cloud service or deploying to a server.\n
+  
+          \n### Step 4: Monitoring and Debugging Workflows\n
+          Once you have set up your workflows, it’s important to monitor them for success and troubleshoot any failures. You can check the status of your workflows by navigating to the "Actions" tab in your repository. Each workflow run will show you the logs for each step, helping you identify any issues.\n
+  
+          \nIf a step fails, you can click on it to view the detailed logs. GitHub provides helpful error messages and suggestions for common issues, making it easier to diagnose and fix problems.\n
+  
+          \n## Best Practices for Using GitHub Actions\n
+          To get the most out of GitHub Actions, consider the following best practices:\n
+  
+          \n- **Keep Workflows Modular:** Break down complex workflows into smaller, reusable actions and workflows. This enhances maintainability and readability.\n
+  
+          \n- **Use Secrets for Sensitive Information:** When dealing with credentials or API keys, use GitHub Secrets to store sensitive information securely. You can reference these secrets in your workflows without exposing them in your code.\n
+  
+          \n- **Optimize Workflow Performance:** Minimize the number of steps in your workflows and cache dependencies when possible. This will speed up your workflow runs and save you time.\n
+  
+          \n- **Document Your Workflows:** Include comments and documentation within your workflow files. This helps other developers understand your workflows and makes it easier to onboard new team members.\n
+  
+          \n## Conclusion\n
+          GitHub Actions is a powerful tool that can significantly enhance your development workflow. By automating tasks, you can improve efficiency, maintain code quality, and streamline your CI/CD processes. In this course, you’ve learned how to set up your first GitHub Action, customize workflows, and monitor their execution.\n
+  
+          \nWith the skills you've gained, you can now start leveraging GitHub Actions to automate your development tasks and improve your overall productivity. Let’s get started and transform the way you develop software with GitHub Actions!\n
+      `,
   },
   'course 2: github pages guide': {
     title: 'Course 2: GitHub Pages Guide',
