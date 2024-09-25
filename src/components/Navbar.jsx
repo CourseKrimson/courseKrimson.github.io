@@ -71,7 +71,7 @@ function Navbar({ loggedin }) {
               </form>
             </div>
             {loggedin === 'true' ? (
-              <Link className="btn btn-primary clk" to="/profile">Profile</Link>
+               <span><Link className="btn btn-primary clk rounded-circle" to="/profile"><i className="fa-regular fa-user"></i></Link> Profile</span>
             ) : (
               <Link className="btn btn-primary clk" to="/login">Sign up</Link>
             )}

@@ -50,7 +50,7 @@ function Profile() {
             {/* <p>Last Name: {userDetails.lastName}</p> */}
           </div>
           <button className="btn btn-primary" onClick={handleLogout}>
-            Logout
+            <i className="fa-solid fa-right-from-bracket"></i> Logout
           </button>
         </>
       ) : (

@@ -28,9 +28,9 @@ function CourseDetail() {
       <img src={course.image} alt={course.title} className="img-fluid" />
       <p>{course.description}</p>
       <h4>Course Content:</h4>
-      <YouTubeEmbed videoId='C7bHn1ZZCXI' />
+      <YouTubeEmbed videoId={course.ytb_vid} />
       <p>{formatContent(course.content)}</p>
-      <h4><span className="badge bg-primary">Written by {course.author}</span></h4>
+      <h6><span className="badge bg-primary"><i className="fa-solid fa-pen-nib"></i> {course.author}</span></h6>
     </div>
   );
 }

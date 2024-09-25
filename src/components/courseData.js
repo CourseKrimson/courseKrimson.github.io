@@ -4,7 +4,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/4CAF50/fff&text=GitHub+Action', // Green for productivity
     description: 'Learn how to automate your development workflows with GitHub Actions.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       This course will cover:
       \n- Setting up GitHub Actions
@@ -19,7 +19,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/2196F3/fff&text=GitHub+Pages', // Blue for trust
     description: 'Deploy static websites using GitHub Pages.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       Learn how to:
       \n- Host websites on GitHub Pages
@@ -33,7 +33,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/FF5722/fff&text=Firebase', // Orange for enthusiasm
     description: 'Get started with Firebase to build modern web and mobile apps.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       This course covers:
       \n- Setting up Firebase projects
@@ -47,7 +47,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/9C27B0/fff&text=Cloudflare', // Purple for creativity
     description: 'Learn how to use Cloudflare to enhance website performance and security.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       In this course, you will learn:
       \n- DNS management
@@ -61,7 +61,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/FF9800/fff&text=Domain+Hosting', // Amber for warmth
     description: 'A comprehensive guide to understanding domain registration and hosting.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       Learn about:
       \n- Domain registration
@@ -75,7 +75,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/3F51B5/fff&text=Discord+Bot', // Indigo for professionalism
     description: 'Learn how to create and deploy a Discord bot using JavaScript.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       This course will cover:
       \n- Setting up a Discord bot
@@ -89,7 +89,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/4CAF50/fff&text=Telegram+Bot', // Green for growth
     description: 'Create and manage a Telegram bot using the Telegram Bot API.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       Learn how to:
       \n- Set up a Telegram bot
@@ -103,7 +103,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/FFC107/fff&text=Webhooks', // Yellow for clarity
     description: 'Master the art of integrating webhooks into your applications.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       This course will teach:
       \n- What webhooks are and how they work
@@ -117,7 +117,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/00BCD4/fff&text=ZSH+Setup', // Cyan for tranquility
     description: 'Enhance your terminal experience with OH MY ZSH.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       This course covers:
       \n- Installing and configuring OH MY ZSH
@@ -130,7 +130,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/673AB7/fff&text=Customize+Terminal', // Deep Purple for creativity
     description: 'Learn how to create a productive and visually appealing terminal environment.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       This course will teach you:
       \n- Customizing terminal prompts and colors
@@ -143,7 +143,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/FFEB3B/000&text=Windows+Operational', // Yellow for clarity
     description: 'A complete guide to operating and optimizing your Windows system for development.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       This course covers:
       \n- Essential Windows commands and shortcuts
@@ -156,7 +156,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/4CAF50/fff&text=Linux+for+Devs', // Green for productivity
     description: 'Master Linux commands and workflows for software development.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       Learn how to:
       \n- Navigate Linux file systems
@@ -169,7 +169,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/FF5722/fff&text=Portfolio+Development', // Orange for enthusiasm
     description: 'Build and showcase your skills with a professional online portfolio.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       This course will teach:
       \n- Structuring and designing portfolios
@@ -182,7 +182,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/3F51B5/fff&text=Indexing', // Indigo for professionalism
     description: 'Learn about effective indexing strategies for databases.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       In this course, you will learn:
       \n- Types of indexing methods
@@ -195,7 +195,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/FF9800/fff&text=Advanced+GitHub', // Amber for warmth
     description: 'Dive deeper into GitHub features and best practices.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       This course covers:
       \n- Advanced branching strategies
@@ -208,7 +208,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/2196F3/fff&text=Flutter+App+Dev', // Blue for trust
     description: 'Learn how to build cross-platform apps with Flutter.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       This course will teach:
       \n- Setting up Flutter environment
@@ -221,7 +221,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/9C27B0/fff&text=DSA', // Purple for creativity
     description: 'Master the fundamentals of data structures and algorithms.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       In this course, you will learn:
       \n- Common data structures
@@ -234,7 +234,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/FF5722/fff&text=Machine+Learning', // Orange for enthusiasm
     description: 'Get introduced to the world of machine learning.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       This course covers:
       \n- Key concepts of machine learning
@@ -247,7 +247,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/FF9800/fff&text=Cyber+Security', // Amber for warmth
     description: 'Understand the basics of cyber security and how to protect systems.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       Learn about:
       \n- Common threats and vulnerabilities
@@ -260,7 +260,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/3F51B5/fff&text=Web+Scraping', // Indigo for professionalism
     description: 'Learn how to scrape web data using Python libraries.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       This course will teach you:
       \n- Using BeautifulSoup and Scrapy
@@ -273,7 +273,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/FFEB3B/000&text=Flask+API', // Yellow for clarity
     description: 'Create RESTful APIs using Flask in Python.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       In this course, you will learn:
       \n- Setting up Flask environment
@@ -286,7 +286,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/4CAF50/fff&text=Front-End+Frameworks', // Green for productivity
     description: 'Explore popular front-end frameworks like React, Angular, and Vue.js.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       Learn about:
       \n- Comparing different frameworks
@@ -299,7 +299,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/FF5722/fff&text=Node.js', // Orange for enthusiasm
     description: 'Learn to build scalable applications using Node.js.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       This course covers:
       \n- Setting up Node.js environment
@@ -312,7 +312,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/9C27B0/fff&text=Testing+Debugging', // Purple for creativity
     description: 'Master testing and debugging techniques for software development.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       Learn how to:
       \n- Write unit and integration tests
@@ -325,7 +325,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/00BCD4/fff&text=DevOps', // Cyan for tranquility
     description: 'Understand DevOps practices and principles for better collaboration.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       This course will teach:
       \n- Continuous integration and delivery
@@ -338,7 +338,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/FFEB3B/000&text=Docker', // Yellow for clarity
     description: 'Learn the basics of containerization using Docker.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       In this course, you will learn:
       \n- Setting up Docker environment
@@ -351,7 +351,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/4CAF50/fff&text=React+Native', // Green for productivity
     description: 'Build mobile applications using React Native framework.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       This course covers:
       \n- Setting up React Native environment
@@ -364,7 +364,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/FF9800/fff&text=APIs', // Amber for warmth
     description: 'Learn how to work with APIs for integrating services.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       Learn about:
       \n- Types of APIs (REST, SOAP)
@@ -377,7 +377,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/4CAF50/fff&text=Automation', // Green for productivity
     description: 'Automate repetitive tasks using Python scripts.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       This course will teach you:
       \n- Writing scripts for automation
@@ -390,7 +390,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/9C27B0/fff&text=Communication', // Purple for creativity
     description: 'Enhance your communication skills in technical environments.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       Learn how to:
       \n- Communicate technical concepts clearly
@@ -403,7 +403,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/FF5722/fff&text=Ethical+Hacking', // Orange for enthusiasm
     description: 'Understand the basics of ethical hacking and cybersecurity.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       This course covers:
       \n- Key concepts of ethical hacking
@@ -416,7 +416,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/4CAF50/fff&text=VR+Development', // Green for productivity
     description: 'Learn to create immersive experiences in virtual reality.',
-    ytb_vid: 'https://www.youtube.com/watch?v=8lEsbcUSoU8',
+    ytb_vid: 'C7bHn1ZZCXI',
     content: `
       This course will teach you:
       \n- Basics of VR technologies
@@ -429,7 +429,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/FF9800/fff&text=Programming+Basics', // Orange for creativity
     description: 'Learn the fundamentals of programming and problem-solving techniques.',
-    ytb_vid: 'https://www.youtube.com/watch?v=Z1Yd7upQsXY',
+    ytb_vid: 'Z1Yd7upQsXY',
     content: `
       This course will introduce you to:
       \n- Basic programming concepts and logic

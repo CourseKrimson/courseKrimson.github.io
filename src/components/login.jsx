@@ -54,7 +54,7 @@ function Login() {
 
         <div className="d-grid">
           <button type="submit" className="btn btn-primary">
-            Submit
+            Login <i className="fa-solid fa-right-to-bracket"></i>
           </button>
         </div>
         <p className="forgot-password text-right">
