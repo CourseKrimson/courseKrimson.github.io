@@ -50,7 +50,7 @@ const courses = {
     description: 'Learn how to use Cloudflare to enhance website performance and security.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      In# This course, you will learn:
+      \n# This course, you will learn:
       \n- DNS management
       \n- Cloudflare CDN
       \n- DDoS protection
@@ -185,7 +185,7 @@ const courses = {
     description: 'Learn about effective indexing strategies for databases.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      In# This course, you will learn:
+      \n# This course, you will learn:
       \n- Types of indexing methods
       \n- Implementing indexing in databases
       \n- Optimizing queries with indexing
@@ -276,7 +276,7 @@ const courses = {
     description: 'Create RESTful APIs using Flask in Python.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      In# This course, you will learn:
+      \n# This course, you will learn:
       \n- Setting up Flask environment
       \n- Creating routes and handling requests
       \n- Integrating with databases
@@ -341,7 +341,7 @@ const courses = {
     description: 'Learn the basics of containerization using Docker.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      In# This course, you will learn:
+      \n# This course, you will learn:
       \n- Setting up Docker environment
       \n- Building and running containers
       \n- Managing container orchestration
@@ -425,7 +425,7 @@ const courses = {
       \n- Designing immersive user experiences
     `,
   },
-'course 33: introduction to programming': {
+  'course 33: introduction to programming': {
     title: 'Course 33: Introduction to Programming',
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/FF9800/fff&text=Programming+Basics', // Orange for creativity
@@ -437,6 +437,6 @@ const courses = {
       \n- Writing your first code in Python
       \n- Problem-solving strategies
     `,
-},
+  },
 };
 export default courses;
