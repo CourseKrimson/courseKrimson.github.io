@@ -6,7 +6,7 @@ const courses = {
     description: 'Learn how to automate your development workflows with GitHub Actions.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      This course will cover:
+      \n # This course will cover:
       \n- Setting up GitHub Actions
       \n- Automating CI/CD pipelines
       \n- Managing workflows with YAML files
@@ -21,11 +21,12 @@ const courses = {
     description: 'Deploy static websites using GitHub Pages.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      Learn how to:
+       \n# Learn how to:
       \n- Host websites on GitHub Pages
       \n- Use custom domains
       \n- Automate deployment with GitHub Actions
       \n- Debug common issues
+
     `,
   },
   'course 3: introduction to firebase': {
@@ -35,7 +36,7 @@ const courses = {
     description: 'Get started with Firebase to build modern web and mobile apps.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      This course covers:
+ \n# This course covers:
       \n- Setting up Firebase projects
       \n- Using Firestore for real-time databases
       \n- Firebase Authentication
@@ -49,7 +50,7 @@ const courses = {
     description: 'Learn how to use Cloudflare to enhance website performance and security.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      In this course, you will learn:
+      In# This course, you will learn:
       \n- DNS management
       \n- Cloudflare CDN
       \n- DDoS protection
@@ -63,7 +64,7 @@ const courses = {
     description: 'A comprehensive guide to understanding domain registration and hosting.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      Learn about:
+    \n #  Learn about:
       \n- Domain registration
       \n- Hosting options and services
       \n- DNS configuration
@@ -77,7 +78,7 @@ const courses = {
     description: 'Learn how to create and deploy a Discord bot using JavaScript.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      This course will cover:
+ \n# This course will cover:
       \n- Setting up a Discord bot
       \n- Using Discord.js library
       \n- Handling events and commands
@@ -91,7 +92,7 @@ const courses = {
     description: 'Create and manage a Telegram bot using the Telegram Bot API.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      Learn how to:
+    \n #  Learn how to:
       \n- Set up a Telegram bot
       \n- Handle messages and commands
       \n- Integrate webhooks for real-time responses
@@ -105,7 +106,7 @@ const courses = {
     description: 'Master the art of integrating webhooks into your applications.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      This course will teach:
+ \n# This course will teach:
       \n- What webhooks are and how they work
       \n- Setting up webhooks in your application
       \n- Handling incoming requests
@@ -119,7 +120,7 @@ const courses = {
     description: 'Enhance your terminal experience with OH MY ZSH.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      This course covers:
+ \n# This course covers:
       \n- Installing and configuring OH MY ZSH
       \n- Customizing ZSH themes and plugins
       \n- Productivity tips for terminal users
@@ -132,7 +133,7 @@ const courses = {
     description: 'Learn how to create a productive and visually appealing terminal environment.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      This course will teach you:
+ \n# This course will teach you:
       \n- Customizing terminal prompts and colors
       \n- Installing and using terminal extensions
       \n- Workflow automation in terminal
@@ -145,7 +146,7 @@ const courses = {
     description: 'A complete guide to operating and optimizing your Windows system for development.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      This course covers:
+ \n# This course covers:
       \n- Essential Windows commands and shortcuts
       \n- Setting up a development environment
       \n- Optimizing system performance for coding
@@ -158,7 +159,7 @@ const courses = {
     description: 'Master Linux commands and workflows for software development.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      Learn how to:
+    \n #  Learn how to:
       \n- Navigate Linux file systems
       \n- Work with terminal commands
       \n- Set up environments for coding and deployment
@@ -171,7 +172,7 @@ const courses = {
     description: 'Build and showcase your skills with a professional online portfolio.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      This course will teach:
+ \n# This course will teach:
       \n- Structuring and designing portfolios
       \n- Using frameworks like Bootstrap or Tailwind
       \n- Hosting and deploying your portfolio site
@@ -184,7 +185,7 @@ const courses = {
     description: 'Learn about effective indexing strategies for databases.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      In this course, you will learn:
+      In# This course, you will learn:
       \n- Types of indexing methods
       \n- Implementing indexing in databases
       \n- Optimizing queries with indexing
@@ -197,7 +198,7 @@ const courses = {
     description: 'Dive deeper into GitHub features and best practices.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      This course covers:
+ \n# This course covers:
       \n- Advanced branching strategies
       \n- Managing pull requests and code reviews
       \n- Leveraging GitHub Actions for CI/CD
@@ -210,7 +211,7 @@ const courses = {
     description: 'Learn how to build cross-platform apps with Flutter.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      This course will teach:
+ \n# This course will teach:
       \n- Setting up Flutter environment
       \n- Building layouts and navigation
       \n- Integrating APIs and services
@@ -223,7 +224,7 @@ const courses = {
     description: 'Master the fundamentals of data structures and algorithms.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      In this course, you will learn:
+      \n# This course, you will learn:
       \n- Common data structures
       \n- Algorithm design techniques
       \n- Complexity analysis
@@ -236,7 +237,7 @@ const courses = {
     description: 'Get introduced to the world of machine learning.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      This course covers:
+ \n# This course covers:
       \n- Key concepts of machine learning
       \n- Supervised vs unsupervised learning
       \n- Implementing basic algorithms in Python
@@ -249,7 +250,7 @@ const courses = {
     description: 'Understand the basics of cyber security and how to protect systems.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      Learn about:
+    \n #  Learn about:
       \n- Common threats and vulnerabilities
       \n- Security measures and best practices
       \n- Incident response strategies
@@ -262,7 +263,7 @@ const courses = {
     description: 'Learn how to scrape web data using Python libraries.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      This course will teach you:
+ \n# This course will teach you:
       \n- Using BeautifulSoup and Scrapy
       \n- Handling web requests and responses
       \n- Storing scraped data for analysis
@@ -275,7 +276,7 @@ const courses = {
     description: 'Create RESTful APIs using Flask in Python.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      In this course, you will learn:
+      In# This course, you will learn:
       \n- Setting up Flask environment
       \n- Creating routes and handling requests
       \n- Integrating with databases
@@ -288,7 +289,7 @@ const courses = {
     description: 'Explore popular front-end frameworks like React, Angular, and Vue.js.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      Learn about:
+    \n #  Learn about:
       \n- Comparing different frameworks
       \n- Setting up development environments
       \n- Building projects with chosen frameworks
@@ -301,7 +302,7 @@ const courses = {
     description: 'Learn to build scalable applications using Node.js.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      This course covers:
+ \n# This course covers:
       \n- Setting up Node.js environment
       \n- Creating servers and APIs
       \n- Handling asynchronous programming
@@ -314,7 +315,7 @@ const courses = {
     description: 'Master testing and debugging techniques for software development.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      Learn how to:
+    \n #  Learn how to:
       \n- Write unit and integration tests
       \n- Use testing frameworks
       \n- Debugging techniques and tools
@@ -327,7 +328,7 @@ const courses = {
     description: 'Understand DevOps practices and principles for better collaboration.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      This course will teach:
+ \n# This course will teach:
       \n- Continuous integration and delivery
       \n- Infrastructure as code
       \n- Monitoring and logging best practices
@@ -340,7 +341,7 @@ const courses = {
     description: 'Learn the basics of containerization using Docker.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      In this course, you will learn:
+      In# This course, you will learn:
       \n- Setting up Docker environment
       \n- Building and running containers
       \n- Managing container orchestration
@@ -353,7 +354,7 @@ const courses = {
     description: 'Build mobile applications using React Native framework.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      This course covers:
+ \n# This course covers:
       \n- Setting up React Native environment
       \n- Building UI components
       \n- Managing state and navigation
@@ -366,7 +367,7 @@ const courses = {
     description: 'Learn how to work with APIs for integrating services.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      Learn about:
+    \n #  Learn about:
       \n- Types of APIs (REST, SOAP)
       \n- Consuming APIs in applications
       \n- API authentication and security
@@ -379,7 +380,7 @@ const courses = {
     description: 'Automate repetitive tasks using Python scripts.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      This course will teach you:
+ \n# This course will teach you:
       \n- Writing scripts for automation
       \n- Using libraries for web scraping and API calls
       \n- Scheduling tasks with cron jobs
@@ -392,7 +393,7 @@ const courses = {
     description: 'Enhance your communication skills in technical environments.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      Learn how to:
+    \n #  Learn how to:
       \n- Communicate technical concepts clearly
       \n- Collaborate with teams effectively
       \n- Present ideas and projects
@@ -405,7 +406,7 @@ const courses = {
     description: 'Understand the basics of ethical hacking and cybersecurity.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      This course covers:
+ \n# This course covers:
       \n- Key concepts of ethical hacking
       \n- Common tools and techniques
       \n- Legal and ethical considerations
@@ -418,7 +419,7 @@ const courses = {
     description: 'Learn to create immersive experiences in virtual reality.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
-      This course will teach you:
+ \n# This course will teach you:
       \n- Basics of VR technologies
       \n- Creating VR applications using Unity
       \n- Designing immersive user experiences
@@ -431,7 +432,7 @@ const courses = {
     description: 'Learn the fundamentals of programming and problem-solving techniques.',
     ytb_vid: 'Z1Yd7upQsXY',
     content: `
-      This course will introduce you to:
+ \n# This course will introduce you to:
       \n- Basic programming concepts and logic
       \n- Writing your first code in Python
       \n- Problem-solving strategies

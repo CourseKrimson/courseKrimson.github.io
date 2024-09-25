@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import courses from './courseData'; // Ensure the path is correct
 import YouTubeEmbed from './YouTubeEmbed';
+import { marked } from 'marked';  // Import the marked library
 
 function CourseDetail() {
   const { courseName } = useParams();
@@ -12,14 +13,9 @@ function CourseDetail() {
     return <h2 className="text-center">Course not found</h2>;
   }
 
-  // Function to convert newlines to <br />
-  const formatContent = (content) => {
-    return content.split('\n').map((line, index) => (
-      <span key={index}>
-        {line}
-        <br />
-      </span>
-    ));
+  // Function to convert markdown to HTML using 'marked'
+  const renderMarkdown = (markdownText) => {
+    return { __html: marked(markdownText) };
   };
 
   return (
@@ -29,7 +25,10 @@ function CourseDetail() {
       <p>{course.description}</p>
       <h4>Course Content:</h4>
       <YouTubeEmbed videoId={course.ytb_vid} />
-      <p>{formatContent(course.content)}</p>
+      
+      {/* Use dangerouslySetInnerHTML to inject the HTML from the markdown */}
+      <div dangerouslySetInnerHTML={renderMarkdown(course.content)} />
+
       <h6><span className="badge bg-primary"><i className="fa-solid fa-pen-nib"></i> {course.author}</span></h6>
     </div>
   );
