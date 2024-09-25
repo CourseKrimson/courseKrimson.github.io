@@ -25,7 +25,7 @@ function SearchResults() {
           filteredCourses.map(([key, course], index) => (
             <div className="col" key={index}>
               <div className="card h-100">
-                <Link to={`/courses/${key}`} className="lnk">
+                <Link to={`/courses/${key}`} className="lnk" onClick={(e) => e.stopPropagation()}>
                   <img src={course.image} className="card-img-top" alt={course.title} />
                   <div className="card-body">
                     <h5 className="card-title">{course.title}</h5>

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import logo from '../assets/images/logo.png';
-import { Link, useNavigate } from 'react-router-dom'; // Import Link and useNavigate from react-router-dom
+import { Link, useNavigate } from 'react-router-dom';
 
 function Navbar({ loggedin }) {
   const [searchTerm, setSearchTerm] = useState(''); // State for search term
@@ -11,13 +11,15 @@ function Navbar({ loggedin }) {
     setSearchTerm(event.target.value);
   };
 
-  // Use effect to trigger navigation whenever the search term changes
-  useEffect(() => {
-    if (searchTerm) {
-      // Navigate to search page as the user types
+  // Handle search submission when "Enter" is pressed
+  const handleSearchSubmit = (event) => {
+    event.preventDefault(); // Prevent form submission default behavior
+    if (searchTerm.trim()) {
+      // Navigate to search page with the query
       navigate(`/search?query=${encodeURIComponent(searchTerm)}`);
+      // setSearchTerm(''); // Optionally reset the search input after navigating
     }
-  }, [searchTerm, navigate]); // Trigger effect when searchTerm or navigate changes
+  };
 
   return (
     <nav className="navbar navbar-expand-lg">
@@ -53,7 +55,7 @@ function Navbar({ loggedin }) {
           </ul>
           <div className="d-flex align-items-center flex-column flex-lg-row">
             <div className="me-2 mb-2 mb-lg-0">
-              <div className="input-group">
+              <form className="input-group" onSubmit={handleSearchSubmit}>
                 <span className="input-group-text" id="basic-addon1">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
@@ -66,7 +68,7 @@ function Navbar({ loggedin }) {
                   value={searchTerm}
                   onChange={handleSearchChange}
                 />
-              </div>
+              </form>
             </div>
             {loggedin === 'true' ? (
               <Link className="btn btn-primary clk" to="/profile">Profile</Link>

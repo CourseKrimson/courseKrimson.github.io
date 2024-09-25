@@ -30,7 +30,7 @@ function CourseDetail() {
       <h4>Course Content:</h4>
       <YouTubeEmbed videoId='C7bHn1ZZCXI' />
       <p>{formatContent(course.content)}</p>
-      <h4><span class="badge bg-primary">Written by {course.author}</span></h4>
+      <h4><span className="badge bg-primary">Written by {course.author}</span></h4>
     </div>
   );
 }
