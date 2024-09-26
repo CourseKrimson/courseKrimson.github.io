@@ -1,21 +1,45 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import courses from './courseData'; // Ensure the path is correct
+import courseData from './courseData'; // Ensure correct path
 import YouTubeEmbed from './YouTubeEmbed';
-import { marked } from 'marked';  // Import the marked library
 
 function CourseDetail() {
   const { courseName } = useParams();
   const courseKey = courseName.toLowerCase(); // Ensure proper formatting
-  const course = courses[courseKey]; // Lookup using the sanitized course key
+  const [course, setCourse] = useState(null); // Store course data
+  const [loading, setLoading] = useState(true); // Loading state
+
+  useEffect(() => {
+    const loadCourseData = async () => {
+      try {
+        const courses = await courseData(); // Fetch courses from Firestore
+        setCourse(courses[courseKey]); // Set the specific course
+      } catch (error) {
+        console.error("Error fetching course:", error);
+      }
+      setLoading(false); // Stop loading once data is fetched
+    };
+
+    loadCourseData();
+  }, [courseKey]);
+
+  if (loading) {
+    return <h2 className="text-center">Loading...</h2>;
+  }
 
   if (!course) {
+    console.log(course);
     return <h2 className="text-center">Course not found</h2>;
   }
 
-  // Function to convert markdown to HTML using 'marked'
-  const renderMarkdown = (markdownText) => {
-    return { __html: marked(markdownText) };
+  // Function to convert newlines to <br />
+  const formatContent = (content) => {
+    return content ? content.split('\n').map((line, index) => (
+      <span key={index}>
+        {line}
+        <br />
+      </span>
+    )) : '';
   };
 
   return (
@@ -25,10 +49,7 @@ function CourseDetail() {
       <p>{course.description}</p>
       <h4>Course Content:</h4>
       <YouTubeEmbed videoId={course.ytb_vid} />
-      
-      {/* Use dangerouslySetInnerHTML to inject the HTML from the markdown */}
-      <div dangerouslySetInnerHTML={renderMarkdown(course.content)} />
-
+      <p>{formatContent(course.content)}</p>
       <h6><span className="badge bg-primary"><i className="fa-solid fa-pen-nib"></i> {course.author}</span></h6>
     </div>
   );

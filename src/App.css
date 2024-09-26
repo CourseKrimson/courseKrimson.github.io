@@ -1,16 +1,5 @@
-.App {
-  /* text-align: center; */
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root {
+  --primary-color: rgb(186 22 163);
 }
 
 .App-header {
@@ -24,7 +13,7 @@
   color: white;
 }
 .lnk {
-    color: rgb(186 22 163) ;
+    color: var(--primary-color);
     text-decoration: none ;
 }
 .clk{
@@ -52,4 +41,13 @@ background: rgb(186 22 163) !important;
 /* Expanded state when the input is focused */
 .search-expanded .form-control {
   width: 300px; /* You can adjust this width */
+}
+input, textarea{ 
+  border: 1px solid var(--primary-color) !important;
+}
+.input-group span{
+border: 1px solid var(--primary-color) !important;
+}
+.btn-primary{
+  background-color: var(--primary-color) !important;
 }

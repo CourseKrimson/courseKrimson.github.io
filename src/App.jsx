@@ -21,7 +21,7 @@ import Navbar from './components/Navbar';
 import CourseDetail from './components/CourseDetail';
 import Dashboard from './components/dashboard';
 import courses from './components/courseData';
-
+import  UploadCourse from './components/uploadCourse';
 function App() {
   const [user, setUser] = useState(null);
 
@@ -68,7 +68,7 @@ function App() {
               <Route path="/courses/:courseName" element={<CourseDetail />} />
               <Route path="/" element={<Dashboard courses={courses} />} />
               <Route path="/search" element={<SearchResults />} />
-
+              <Route path="/admin" element={<UploadCourse/>} />
             </Routes>
             <ToastContainer />
           </div>
