@@ -231,7 +231,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/00BCD4/fff&text=ZSH+Setup', // Cyan for tranquility
     description: 'Enhance your terminal experience with OH MY ZSH.',
-    ytb_vid: 'C7bHn1ZZCXI',
+    ytb_vid: 'dCdX5v3IU60',
     content: `
  \n# This course covers:
       \n- Installing and configuring OH MY ZSH
