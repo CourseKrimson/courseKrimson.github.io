@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
-import NProgress from 'nprogress';
-import 'nprogress/nprogress.css'; 
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import './index.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+  useLocation
+} from 'react-router-dom';
 import SearchResults from './components/search';
 import Login from './components/login';
 import SignUp from './components/register';
@@ -18,65 +23,62 @@ import Dashboard from './components/dashboard';
 import courses from './components/courseData';
 import Footer from './components/Footer';
 
-// Configure NProgress settings
-NProgress.configure({ showSpinner: false, speed: 500, trickleSpeed: 200 });
-
-const App = () => {
-  const location = useLocation();
+function App() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    NProgress.start();
-    
-    const timeout = setTimeout(() => {
-      NProgress.done(); 
-    }, 200); 
-
-    return () => {
-      clearTimeout(timeout); 
-      NProgress.done();
-    };
-  }, [location]);
-
-  // Firebase authentication check
-  useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
-      setUser(user);
+      setUser(user); // Set user when logged in
     });
-    return () => unsubscribe();
+
+    return () => unsubscribe(); // Clean up on unmount
   }, []);
+  // Handle redirects from GitHub Pages 404 fallback
+  // function RedirectWithState() {
+  //   const location = useLocation();
+  //   useEffect(() => {
+  //     const redirectPath = new URLSearchParams(location.search).get('redirect');
+  //     if (redirectPath) {
+  //       window.history.replaceState({}, '', redirectPath);
+  //     }
+  //   }, [location]);
+  //   return null;
+  // }
 
   return (
-    <div className="App">
-      <Navbar loggedin={user ? 'true' : 'false'} />
-      <div className="auth-wrapper">
-        <div className="auth-inner">
-          <Routes>
-            {/* Redirect to profile if user is logged in */}
-            <Route path="/" element={user ? <Navigate to="/profile" /> : <Login />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/login" element={user ? <Navigate to="/profile" /> : <Login />} />
-            <Route path="/register" element={<SignUp />} />
-            <Route path="/profile" element={user ? <Profile /> : <Navigate to="/login" />} />
-            <Route path="/courses/:courseName" element={<CourseDetail />} />
-            <Route path="/dashboard" element={<Dashboard courses={courses} />} />
-            <Route path="/search" element={<SearchResults />} />
-          </Routes>
-          <ToastContainer />
+    <Router basename={import.meta.env.BASE_URL}>
+      {/* <RedirectWithState /> */}
+      <div className="App">
+        {/* Pass user status as loggedin prop to Navbar */}
+        <Navbar loggedin={user ? 'true' : 'false'} />
+        <div className="auth-wrapper">
+          <div className="auth-inner">
+           
+            <Routes>
+              {/* Redirect to profile if the user is logged in */}
+              <Route path="/" element={user ? <Navigate to="/profile" /> : <Login />} />
+              <Route path="/home" element={<Home />} />
+              <Route
+                path="/login"
+                element={user ? <Navigate to="/profile" /> : <Login />}
+              />
+              <Route path="/register" element={<SignUp />} />
+              <Route
+                path="/profile"
+                element={user ? <Profile /> : <Navigate to="/login" />}
+              />
+              <Route path="/courses/:courseName" element={<CourseDetail />} />
+              <Route path="/" element={<Dashboard courses={courses} />} />
+              <Route path="/search" element={<SearchResults />} />
+
+            </Routes>
+            <ToastContainer />
+          </div>
         </div>
       </div>
-      <Footer />
-    </div>
-  );
-};
-
-const WrappedApp = () => {
-  return (
-    <Router>
-      <App />
+       <Footer />
     </Router>
   );
-};
+}
 
-export default WrappedApp;
-
+export default App;
