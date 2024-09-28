@@ -1,3 +1,6 @@
+:root{
+  --primary-color:rgb(186, 22, 163);
+}
 .App {
   /* text-align: center; */
 }
@@ -24,7 +27,7 @@
   color: white;
 }
 .lnk {
-    color: rgb(186 22 163) ;
+    color: var(--primary-color) ;
     text-decoration: none ;
 }
 .clk{
@@ -43,13 +46,20 @@ background: rgb(186 22 163) !important;
     transform: rotate(360deg);
   }
 }
-/* Default state for search input */
 .input-group .form-control {
   width: 150px;
   transition: width 0.3s ease-in-out;
 }
-
-/* Expanded state when the input is focused */
 .search-expanded .form-control {
-  width: 300px; /* You can adjust this width */
+  width: 300px; 
+}
+#nprogress .bar {
+  background: var(--primary-color); 
+
+#nprogress .spinner-icon {
+  border-top-color: var(--primary-color);
+  border-left-color: var(--primary-color); 
+}
+#nprogress .peg {
+  box-shadow: 0 0 10px var(--primary-color), 0 0 5px var(--primary-color); 
 }
