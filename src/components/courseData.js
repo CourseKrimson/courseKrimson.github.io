@@ -237,6 +237,14 @@ const courses = {
       \n- Installing and configuring OH MY ZSH
       \n- Customizing ZSH themes and plugins
       \n- Productivity tips for terminal users
+      \n## Requirements
+      \n- Familiar with Bash, Terminal & Commands
+      \n### What is Zsh?
+      \n<q>Zsh or Zshell is an enhanced, improved and extended version of BASH (Bourne Again Shell).</q>
+      \n### Why Oh My Zsh?
+      \n<code>Oh My Zsh</code> is an open source framework, used to customize zsh as well as manage its configs.
+      \n## Steps Performed:
+      \n<i>coming soon...</i>
     `,
   },
   'course 10: learn to customize terminal': {
