@@ -74,49 +74,48 @@ function Navbar({ loggedin }) {
               </ul>
             </li>
           </ul>
-          
-          {/* Search Bar */}
-          <div className="d-flex align-items-center flex-column flex-lg-row">
-            <div className="me-2 mb-2 mb-lg-0 position-relative">
-              <form className="input-group" onSubmit={handleSearchSubmit}>
-                <span className="input-group-text" id="basic-addon1">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
-                  </svg>
-                </span>
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Search"
-                  value={searchTerm}
-                  onChange={handleSearchChange}
-                />
-              </form>
 
-              {/* Suggestions Dropdown */}
-              {suggestions.length > 0 && (
-                <ul className="list-group position-absolute w-100 mt-1 z-index-1000" style={{ zIndex: '1000' }}>
-                  {suggestions.map((suggestion, index) => (
-                    <li
-                      key={index}
-                      className="list-group-item"
-                      onClick={() => handleSuggestionClick(suggestion)}
-                      style={{ cursor: 'pointer' }}
-                    >
-                      {suggestion.title}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
+          {/* Profile or Sign up Button */}
+          {loggedin === 'true' ? (
+            <div className="d-flex align-items-center flex-column flex-lg-row">
+              {/* Search Bar */}
+              <div className="me-2 mb-2 mb-lg-0 position-relative">
+                <form className="input-group" onSubmit={handleSearchSubmit}>
+                  <span className="input-group-text" id="basic-addon1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
+                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
+                    </svg>
+                  </span>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Search"
+                    value={searchTerm}
+                    onChange={handleSearchChange}
+                  />
+                </form>
 
-            {/* Profile or Sign up Button */}
-            {loggedin === 'true' ? (
+                {/* Suggestions Dropdown */}
+                {suggestions.length > 0 && (
+                  <ul className="list-group position-absolute w-100 mt-1 z-index-1000" style={{ zIndex: '1000' }}>
+                    {suggestions.map((suggestion, index) => (
+                      <li
+                        key={index}
+                        className="list-group-item"
+                        onClick={() => handleSuggestionClick(suggestion)}
+                        style={{ cursor: 'pointer' }}
+                      >
+                        {suggestion.title}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
               <span><Link className="btn btn-primary clk rounded-circle" to="/profile"><i className="fa-regular fa-user"></i></Link> Profile</span>
-            ) : (
-              <Link className="btn btn-primary clk" to="/login">Sign up</Link>
-            )}
-          </div>
+            </div>
+          ) : (
+            <Link className="btn btn-primary clk" to="/login">Sign up</Link>
+          )}
         </div>
       </div>
     </nav>
