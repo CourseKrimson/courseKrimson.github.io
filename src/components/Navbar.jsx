@@ -28,7 +28,7 @@ function Navbar({ loggedin }) {
           data-bs-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <Link className="navbar-brand" to="/"><img src={logo} width="36" alt="Logo" className="rounded-circle" /></Link>
+        <Link className="navbar-brand" to="/"><img src={logo} width="36" alt="Logo" /></Link>
         <div className="collapse navbar-collapse" id="navbarExample">
           <ul className="navbar-nav me-auto mb-0">
             {loggedin === 'true' ? (
