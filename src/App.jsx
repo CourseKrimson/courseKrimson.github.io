@@ -21,6 +21,7 @@ import Navbar from './components/Navbar';
 import CourseDetail from './components/CourseDetail';
 import Dashboard from './components/dashboard';
 import courses from './components/courseData';
+import Footer from './components/Footer';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -52,6 +53,7 @@ function App() {
         <Navbar loggedin={user ? 'true' : 'false'} />
         <div className="auth-wrapper">
           <div className="auth-inner">
+           
             <Routes>
               {/* Redirect to profile if the user is logged in */}
               <Route path="/" element={user ? <Navigate to="/profile" /> : <Login />} />
@@ -74,6 +76,7 @@ function App() {
           </div>
         </div>
       </div>
+       <Footer />
     </Router>
   );
 }
