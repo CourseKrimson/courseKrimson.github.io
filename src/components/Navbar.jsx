@@ -1,24 +1,45 @@
 import React, { useState } from 'react';
 import logo from '../assets/images/logo.png';
 import { Link, useNavigate } from 'react-router-dom';
+import courses from './courseData'; // Assuming this is your courses object
 
 function Navbar({ loggedin }) {
-  const [searchTerm, setSearchTerm] = useState(''); // State for search term
-  const navigate = useNavigate(); // useNavigate for navigation
+  const [searchTerm, setSearchTerm] = useState('');
+  const [suggestions, setSuggestions] = useState([]);
+  const navigate = useNavigate();
 
   // Handle search input change
   const handleSearchChange = (event) => {
-    setSearchTerm(event.target.value);
+    const searchInput = event.target.value;
+    setSearchTerm(searchInput);
+
+    // Convert courses object to an array for filtering
+    const coursesArray = Object.values(courses);
+
+    if (searchInput.trim()) {
+      const filteredSuggestions = coursesArray.filter((course) =>
+        course.title.toLowerCase().includes(searchInput.toLowerCase())
+      );
+      setSuggestions(filteredSuggestions);
+    } else {
+      setSuggestions([]);
+    }
   };
 
   // Handle search submission when "Enter" is pressed
   const handleSearchSubmit = (event) => {
-    event.preventDefault(); // Prevent form submission default behavior
+    event.preventDefault();
     if (searchTerm.trim()) {
-      // Navigate to search page with the query
       navigate(`/search?query=${encodeURIComponent(searchTerm)}`);
-      // setSearchTerm(''); // Optionally reset the search input after navigating
+      setSuggestions([]); // Clear suggestions after search
     }
+  };
+
+  // Handle suggestion click
+  const handleSuggestionClick = (suggestion) => {
+    setSearchTerm(suggestion.title);
+    navigate(`/search?query=${encodeURIComponent(suggestion.title)}`);
+    setSuggestions([]);
   };
 
   return (
@@ -53,8 +74,10 @@ function Navbar({ loggedin }) {
               </ul>
             </li>
           </ul>
+          
+          {/* Search Bar */}
           <div className="d-flex align-items-center flex-column flex-lg-row">
-            <div className="me-2 mb-2 mb-lg-0">
+            <div className="me-2 mb-2 mb-lg-0 position-relative">
               <form className="input-group" onSubmit={handleSearchSubmit}>
                 <span className="input-group-text" id="basic-addon1">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
@@ -69,9 +92,27 @@ function Navbar({ loggedin }) {
                   onChange={handleSearchChange}
                 />
               </form>
+
+              {/* Suggestions Dropdown */}
+              {suggestions.length > 0 && (
+                <ul className="list-group position-absolute w-100 mt-1 z-index-1000" style={{ zIndex: '1000' }}>
+                  {suggestions.map((suggestion, index) => (
+                    <li
+                      key={index}
+                      className="list-group-item"
+                      onClick={() => handleSuggestionClick(suggestion)}
+                      style={{ cursor: 'pointer' }}
+                    >
+                      {suggestion.title}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
+
+            {/* Profile or Sign up Button */}
             {loggedin === 'true' ? (
-               <span><Link className="btn btn-primary clk rounded-circle" to="/profile"><i className="fa-regular fa-user"></i></Link> Profile</span>
+              <span><Link className="btn btn-primary clk rounded-circle" to="/profile"><i className="fa-regular fa-user"></i></Link> Profile</span>
             ) : (
               <Link className="btn btn-primary clk" to="/login">Sign up</Link>
             )}
