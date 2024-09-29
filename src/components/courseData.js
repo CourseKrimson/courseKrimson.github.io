@@ -558,6 +558,18 @@ const courses = {
       \n- Writing your first code in Python
       \n- Problem-solving strategies
     `,
+      'course 34: getting started with cli': {
+    title: 'Course 34: Getting Started with CLI',
+    author: 'Dev Gautam Kumar',
+    image: 'https://dummyimage.com/600x400/FF9800/fff&text=CLI+PART+1', // Orange for creativity
+    description: 'Kick your journey with CLI',
+    ytb_vid: 'B4b9pX1lqU4',
+    content: `
+    \nA command line interface (CLI) is a text-based user interface used to interact with a computer system. 
+    \nIt uses commands to perform tasks, such as creating files or installing programs. 
+    \nCLIs are useful for automation and troubleshooting, and they can be more efficient than graphical user interfaces (GUIs) for certain tasks. 
+    \nThey were commonly used in the past with systems like Unix, MS-DOS, and Apple DOS, and are still used today by software developers and system administrators.
+    `,
   },
 };
 export default courses;
