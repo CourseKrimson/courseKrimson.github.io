@@ -53,3 +53,6 @@ background: rgb(186 22 163) !important;
 .search-expanded .form-control {
   width: 300px; /* You can adjust this width */
 }
+.btn{
+  background-color: rgb(186 22 163) !important;
+}

@@ -111,7 +111,7 @@ function Navbar({ loggedin }) {
                   </ul>
                 )}
               </div>
-              <span><Link className="btn btn-primary clk rounded-circle" to="/profile"><i className="fa-regular fa-user"></i></Link> Profile</span>
+              <span><Link className="btn clk rounded-circle" to="/profile"><i className="fa-regular fa-user"></i></Link> Profile</span>
             </div>
           ) : (
             <Link className="btn btn-primary clk" to="/login">Sign up</Link>
