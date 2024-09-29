@@ -5,7 +5,7 @@ export default function Footer() {
   const navigate = useNavigate();
 
   return (
-    <footer className="bg-body-tertiary text-center text-lg-start align-items-center fixed-bottom">
+    <footer className=" text-center text-lg-start align-items-center fixed-bottom">
       {/* Back and Forward Buttons */}
       <div className="d-flex justify-content-between p-3">
         {/* Back Button - Left Side */}
