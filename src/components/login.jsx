@@ -53,7 +53,7 @@ function Login() {
         </div>
 
         <div className="d-grid">
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn ">
             Login <i className="fa-solid fa-right-to-bracket"></i>
           </button>
         </div>

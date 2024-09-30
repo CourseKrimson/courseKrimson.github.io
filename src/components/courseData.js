@@ -2,7 +2,7 @@ const courses = {
   'course 1: github action setup': {
     title: 'Course 1: GitHub Action Setup',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/4CAF50/fff&text=GitHub+Action', // Green for productivity
+    image: 'https://dummyimage.com/600x400/4CAF50/fff&text=GitHub+Action', // Green 
     description: 'Learn how to automate your development workflows with GitHub Actions.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -130,7 +130,7 @@ const courses = {
   'course 2: github pages guide': {
     title: 'Course 2: GitHub Pages Guide',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/2196F3/fff&text=GitHub+Pages', // Blue for trust
+    image: 'https://dummyimage.com/600x400/2196F3/fff&text=GitHub+Pages', // Blue 
     description: 'Deploy static websites using GitHub Pages.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -145,7 +145,7 @@ const courses = {
   'course 3: introduction to firebase': {
     title: 'Course 3: Introduction to Firebase',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/FF5722/fff&text=Firebase', // Orange for enthusiasm
+    image: 'https://dummyimage.com/600x400/FF5722/fff&text=Firebase', // Orange
     description: 'Get started with Firebase to build modern web and mobile apps.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -159,7 +159,7 @@ const courses = {
   'course 4: working with cloudflare': {
     title: 'Course 4: Working with Cloudflare',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/9C27B0/fff&text=Cloudflare', // Purple for creativity
+    image: 'https://dummyimage.com/600x400/9C27B0/fff&text=Cloudflare', // Purple 
     description: 'Learn how to use Cloudflare to enhance website performance and security.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -173,7 +173,7 @@ const courses = {
   'course 5: everything you need to know about domain hosting': {
     title: 'Course 5: Everything You Need to Know About Domain Hosting',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/FF9800/fff&text=Domain+Hosting', // Amber for warmth
+    image: 'https://dummyimage.com/600x400/FF9800/fff&text=Domain+Hosting', // Amber 
     description: 'A comprehensive guide to understanding domain registration and hosting.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -187,7 +187,7 @@ const courses = {
   'course 6: how to: discord bot': {
     title: 'Course 6: How to Build a Discord Bot?',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/3F51B5/fff&text=Discord+Bot', // Indigo for professionalism
+    image: 'https://dummyimage.com/600x400/3F51B5/fff&text=Discord+Bot', // Indigo 
     description: 'Learn how to create and deploy a Discord bot using JavaScript.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -201,7 +201,7 @@ const courses = {
   'course 7: how to: telegram bot': {
     title: 'Course 7: How to Build a Telegram Bot?',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/4CAF50/fff&text=Telegram+Bot', // Green for growth
+    image: 'https://dummyimage.com/600x400/4CAF50/fff&text=Telegram+Bot', // Green 
     description: 'Create and manage a Telegram bot using the Telegram Bot API.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -215,7 +215,7 @@ const courses = {
   'course 8: using webhooks for dev': {
     title: 'Course 8: Using Webhooks for Dev',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/FFC107/fff&text=Webhooks', // Yellow for clarity
+    image: 'https://dummyimage.com/600x400/FFC107/fff&text=Webhooks', // Yellow 
     description: 'Master the art of integrating webhooks into your applications.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -229,7 +229,7 @@ const courses = {
   'course 9: oh my zsh setup': {
     title: 'Course 9: OH MY ZSH Setup',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/00BCD4/fff&text=ZSH+Setup', // Cyan for tranquility
+    image: 'https://dummyimage.com/600x400/00BCD4/fff&text=ZSH+Setup', // Cyan 
     description: 'Enhance your terminal experience with OH MY ZSH.',
     ytb_vid: 'dCdX5v3IU60',
     content: `
@@ -277,7 +277,7 @@ const courses = {
   'course 10: learn to customize terminal': {
     title: 'Course 10: Learn to Customize Terminal',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/673AB7/fff&text=Customize+Terminal', // Deep Purple for creativity
+    image: 'https://dummyimage.com/600x400/673AB7/fff&text=Customize+Terminal', // Deep Purple 
     description: 'Learn how to create a productive and visually appealing terminal environment.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -290,7 +290,7 @@ const courses = {
   'course 11: windows operational': {
     title: 'Course 11: Windows Operational',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/FFEB3B/000&text=Windows+Operational', // Yellow for clarity
+    image: 'https://dummyimage.com/600x400/FFEB3B/000&text=Windows+Operational', // Yellow 
     description: 'A complete guide to operating and optimizing your Windows system for development.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -303,7 +303,7 @@ const courses = {
   'course 12: linux for devs': {
     title: 'Course 12: Linux for Devs',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/4CAF50/fff&text=Linux+for+Devs', // Green for productivity
+    image: 'https://dummyimage.com/600x400/4CAF50/fff&text=Linux+for+Devs', // Green 
     description: 'Master Linux commands and workflows for software development.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -316,7 +316,7 @@ const courses = {
   'course 13: portfolio development': {
     title: 'Course 13: Portfolio Development',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/FF5722/fff&text=Portfolio+Development', // Orange for enthusiasm
+    image: 'https://dummyimage.com/600x400/FF5722/fff&text=Portfolio+Development', // Orange
     description: 'Build and showcase your skills with a professional online portfolio.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -329,7 +329,7 @@ const courses = {
   'course 14: indexing techniques': {
     title: 'Course 14: Indexing Techniques',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/3F51B5/fff&text=Indexing', // Indigo for professionalism
+    image: 'https://dummyimage.com/600x400/3F51B5/fff&text=Indexing', // Indigo 
     description: 'Learn about effective indexing strategies for databases.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -342,7 +342,7 @@ const courses = {
   'course 15: advanced github': {
     title: 'Course 15: Advanced GitHub',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/FF9800/fff&text=Advanced+GitHub', // Amber for warmth
+    image: 'https://dummyimage.com/600x400/FF9800/fff&text=Advanced+GitHub', // Amber 
     description: 'Dive deeper into GitHub features and best practices.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -355,7 +355,7 @@ const courses = {
   'course 16: app development with flutter': {
     title: 'Course 16: App Development with Flutter',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/2196F3/fff&text=Flutter+App+Dev', // Blue for trust
+    image: 'https://dummyimage.com/600x400/2196F3/fff&text=Flutter+App+Dev', // Blue 
     description: 'Learn how to build cross-platform apps with Flutter.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -368,7 +368,7 @@ const courses = {
   'course 17: data structures and algorithms': {
     title: 'Course 17: Data Structures and Algorithms',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/9C27B0/fff&text=DSA', // Purple for creativity
+    image: 'https://dummyimage.com/600x400/9C27B0/fff&text=DSA', // Purple 
     description: 'Master the fundamentals of data structures and algorithms.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -381,7 +381,7 @@ const courses = {
   'course 18: machine learning basics': {
     title: 'Course 18: Machine Learning Basics',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/FF5722/fff&text=Machine+Learning', // Orange for enthusiasm
+    image: 'https://dummyimage.com/600x400/FF5722/fff&text=Machine+Learning', // Orange
     description: 'Get introduced to the world of machine learning.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -394,7 +394,7 @@ const courses = {
   'course 19: cyber security fundamentals': {
     title: 'Course 19: Cyber Security Fundamentals',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/FF9800/fff&text=Cyber+Security', // Amber for warmth
+    image: 'https://dummyimage.com/600x400/FF9800/fff&text=Cyber+Security', // Amber 
     description: 'Understand the basics of cyber security and how to protect systems.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -407,7 +407,7 @@ const courses = {
   'course 20: web scraping with python': {
     title: 'Course 20: Web Scraping with Python',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/3F51B5/fff&text=Web+Scraping', // Indigo for professionalism
+    image: 'https://dummyimage.com/600x400/3F51B5/fff&text=Web+Scraping', // Indigo 
     description: 'Learn how to scrape web data using Python libraries.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -420,7 +420,7 @@ const courses = {
   'course 21: building apis with flask': {
     title: 'Course 21: Building APIs with Flask',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/FFEB3B/000&text=Flask+API', // Yellow for clarity
+    image: 'https://dummyimage.com/600x400/FFEB3B/000&text=Flask+API', // Yellow 
     description: 'Create RESTful APIs using Flask in Python.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -433,7 +433,7 @@ const courses = {
   'course 22: front-end frameworks': {
     title: 'Course 22: Front-End Frameworks',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/4CAF50/fff&text=Front-End+Frameworks', // Green for productivity
+    image: 'https://dummyimage.com/600x400/4CAF50/fff&text=Front-End+Frameworks', // Green 
     description: 'Explore popular front-end frameworks like React, Angular, and Vue.js.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -446,7 +446,7 @@ const courses = {
   'course 23: backend development with node.js': {
     title: 'Course 23: Backend Development with Node.js',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/FF5722/fff&text=Node.js', // Orange for enthusiasm
+    image: 'https://dummyimage.com/600x400/FF5722/fff&text=Node.js', // Orange
     description: 'Learn to build scalable applications using Node.js.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -459,7 +459,7 @@ const courses = {
   'course 24: testing and debugging': {
     title: 'Course 24: Testing and Debugging',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/9C27B0/fff&text=Testing+Debugging', // Purple for creativity
+    image: 'https://dummyimage.com/600x400/9C27B0/fff&text=Testing+Debugging', // Purple 
     description: 'Master testing and debugging techniques for software development.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -472,7 +472,7 @@ const courses = {
   'course 25: devops fundamentals': {
     title: 'Course 25: DevOps Fundamentals',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/00BCD4/fff&text=DevOps', // Cyan for tranquility
+    image: 'https://dummyimage.com/600x400/00BCD4/fff&text=DevOps', // Cyan 
     description: 'Understand DevOps practices and principles for better collaboration.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -485,7 +485,7 @@ const courses = {
   'course 26: docker for beginners': {
     title: 'Course 26: Docker for Beginners',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/FFEB3B/000&text=Docker', // Yellow for clarity
+    image: 'https://dummyimage.com/600x400/FFEB3B/000&text=Docker', // Yellow 
     description: 'Learn the basics of containerization using Docker.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -498,7 +498,7 @@ const courses = {
   'course 27: mobile development with react native': {
     title: 'Course 27: Mobile Development with React Native',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/4CAF50/fff&text=React+Native', // Green for productivity
+    image: 'https://dummyimage.com/600x400/4CAF50/fff&text=React+Native', // Green 
     description: 'Build mobile applications using React Native framework.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -511,7 +511,7 @@ const courses = {
   'course 28: working with apis': {
     title: 'Course 28: Working with APIs',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/FF9800/fff&text=APIs', // Amber for warmth
+    image: 'https://dummyimage.com/600x400/FF9800/fff&text=APIs', // Amber 
     description: 'Learn how to work with APIs for integrating services.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -524,7 +524,7 @@ const courses = {
   'course 29: automation with python': {
     title: 'Course 29: Automation with Python',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/4CAF50/fff&text=Automation', // Green for productivity
+    image: 'https://dummyimage.com/600x400/4CAF50/fff&text=Automation', // Green 
     description: 'Automate repetitive tasks using Python scripts.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -537,7 +537,7 @@ const courses = {
   'course 30: effective communication in tech': {
     title: 'Course 30: Effective Communication in Tech',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/9C27B0/fff&text=Communication', // Purple for creativity
+    image: 'https://dummyimage.com/600x400/9C27B0/fff&text=Communication', // Purple 
     description: 'Enhance your communication skills in technical environments.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -550,7 +550,7 @@ const courses = {
   'course 31: ethical hacking basics': {
     title: 'Course 31: Ethical Hacking Basics',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/FF5722/fff&text=Ethical+Hacking', // Orange for enthusiasm
+    image: 'https://dummyimage.com/600x400/FF5722/fff&text=Ethical+Hacking', // Orange
     description: 'Understand the basics of ethical hacking and cybersecurity.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -563,7 +563,7 @@ const courses = {
   'course 32: virtual reality development': {
     title: 'Course 32: Virtual Reality Development',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/4CAF50/fff&text=VR+Development', // Green for productivity
+    image: 'https://dummyimage.com/600x400/4CAF50/fff&text=VR+Development', // Green 
     description: 'Learn to create immersive experiences in virtual reality.',
     ytb_vid: 'C7bHn1ZZCXI',
     content: `
@@ -576,7 +576,7 @@ const courses = {
   'course 33: introduction to programming': {
     title: 'Course 33: Introduction to Programming',
     author: 'Dev Gautam Kumar',
-    image: 'https://dummyimage.com/600x400/FF9800/fff&text=Programming+Basics', // Orange for creativity
+    image: 'https://dummyimage.com/600x400/FF9800/fff&text=Programming+Basics', // Orange 
     description: 'Learn the fundamentals of programming and problem-solving techniques.',
     ytb_vid: 'Z1Yd7upQsXY',
     content: `
@@ -588,7 +588,7 @@ const courses = {
     'course 34: getting started with cli': {
       title: 'Course 34: Getting Started with CLI',
       author: 'Dev Gautam Kumar',
-      image: 'https://dummyimage.com/600x400/FF9800/fff&text=CLI+PART+1', // Orange for creativity
+      image: 'https://dummyimage.com/600x400/FF9800/fff&text=CLI+PART+1', // Orange 
       description: 'Kick your journey with CLI',
       ytb_vid: 'B4b9pX1lqU4',
       content: `
