@@ -268,7 +268,7 @@ const courses = {
       \nThis plugin suggests commands based on your past history, saving your both effort and time.
       \n**Installing <q>Auto-Suggestions</q> plugin**
       \nClone github repository to install it : <code>git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions </code>
-      \nAfter installing, again edit your **.zshrc** file and look for <q>plugins</q> config, and change <code># plugins=(git)</code> to <code>plugins=(git auto-suggestions)</code>
+      \nAfter installing, again edit your **.zshrc** file and look for <q>plugins</q> config, and change <code># plugins=(git)</code> to <code>plugins=(git zsh-auto-suggestions)</code>
       \nIMPORTANT <i>See changes done by using zsh to launch again with new config(s).</q>
       \n **Thank You! Jay Nepal!**
     `,
