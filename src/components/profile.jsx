@@ -31,7 +31,7 @@ function Profile() {
     }
   }
   return (
-    <div className="text-center">
+    <div className="text-center flex-cen">
       {userDetails ? (
         <>
           <div style={{ display: "flex", justifyContent: "center" }}>
@@ -43,7 +43,11 @@ function Profile() {
           </div>
           <h3>Welcome, {userDetails.firstName} 🤗!</h3>
           <div>
-            <p>Email: {userDetails.email}</p> 
+            <p>Email: {userDetails.email}</p>
+            <p>
+              We're excited to have you here again. Let's continue your learning
+              journey
+            </p>
           </div>
           <button className="btn" onClick={handleLogout}>
             <i className="fa-solid fa-right-from-bracket"></i> Logout
