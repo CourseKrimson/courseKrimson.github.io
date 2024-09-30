@@ -244,7 +244,33 @@ const courses = {
       \n### Why Oh My Zsh?
       \n<code>Oh My Zsh</code> is an open source framework, used to customize zsh as well as manage its configs.
       \n## Steps Performed:
-      \n<i>coming soon...</i>
+      \n### ZSH Installation
+      \nInstallation may differ according to your OS. [See here](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+      \n**For Ubuntu**: <code> $ sudo apt intall zsh</code>
+      \n## Oh-My-Zsh Installation
+      \nInstall **Oh-My-Zsh** according to your OS or distro. [See here](https://ohmyz.sh/#install)
+      \n**For Ubuntu**: <code> $ sh -c $(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)</code>
+      \n### Zsh Configuration
+      \n![Screenshot of Oh-My-Zsh](https://uploads.sitepoint.com/wp-content/uploads/2019/11/1573134240zsh-02.png)
+      \nBoom! Now, your **.zshrc** <i>(source file for zshell launch)</i> has been replaced by new **.zshrc** file <i> (in your home dir or where you've installed it.)</i> The original **.zshrc** is kept as a backup file.
+      \n#### Themes
+      \nThe first thing I'd ever do is to change my terminal theme as I like. So, let's explore what will suite for us?
+      \n**Editing <q> .zshrc </q> file**
+      \nGo to <code>~</code> <i>(home dir or where you've installed it)</i>
+      \nI performed : <code>$ cd ~ </code>
+      \nChoose your fav edior and edit **.zshrc** file.
+      \nI performed : <code> $ nano .zshrc </code>
+      \nTo change the theme you need to change the value of <q>ZSH_THEME</q>
+      \n For exploring themes, I placed <q> random </q>. So that, it will launch with any random theme at every instance.
+      \n If you've chosed one, just edit **~/.zshrc** file and change the value of <q>ZSH_THEME</q> with the theme you want. 
+      \n I changed <code>ZSH_THEME="devcontainers"</code> to <code>ZSH_THEME="fino" </code>
+      \n#### Auto-Suggestions
+      \nThis plugin suggests commands based on your past history, saving your both effort and time.
+      \n**Installing <q>Auto-Suggestions</q> plugin**
+      \nClone github repository to install it : <code>git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions </code>
+      \nAfter installing, again edit your **.zshrc** file and look for <q>plugins</q> config, and change <code># plugins=(git)</code> to <code>plugins=(git auto-suggestions)</code>
+      \nIMPORTANT <i>See changes done by using zsh to launch again with new config(s).</q>
+      \n **Thank You! Jay Nepal!**
     `,
   },
   'course 10: learn to customize terminal': {
