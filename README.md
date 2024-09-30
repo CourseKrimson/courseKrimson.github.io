@@ -15,6 +15,7 @@
 
 <h2 id="project-overview">Project Overview</h2>
 <p>CourseKrimson allows you to view a dashboard of tech courses and detailed pages for each course. The courses are added in the <code>courseData.js</code> file, and this is where you can add your own courses as well.</p>
+<img src="https://repobeats.axiom.co/api/embed/0670f1cf20fe37e2ee4e12c822f4f25e75221c7a.svg"/>
 
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
