@@ -244,6 +244,7 @@ const courses = {
       \n### Why Oh My Zsh?
       \n<code>Oh My Zsh</code> is an open source framework, used to customize zsh as well as manage its configs.
       \n## Steps Performed:
+      \n---
       \n### ZSH Installation
       \nInstallation may differ according to your OS. [See here](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
       \n**For Ubuntu**: <code> $ sudo apt intall zsh</code>

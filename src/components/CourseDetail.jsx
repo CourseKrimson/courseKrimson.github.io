@@ -20,10 +20,10 @@ function CourseDetail() {
 
   return (
     <div className="container mt-5">
-      <h2>{course.title}</h2>
-      <img src={course.image} alt={course.title} className="img-fluid" />
-      <p>{course.description}</p>
-      <h4>Course Content:</h4>
+      <h2 className='text-center'>{course.title}</h2>
+      {/* <img src={course.image} alt={course.title} className="img-fluid" /> */}
+      <p className='text-center'>{course.description}</p>
+      <h4 className='text-center'>Course Content:</h4>
       <YouTubeEmbed videoId={course.ytb_vid} />
       
       {/* Use dangerouslySetInnerHTML to inject the HTML from the markdown */}
