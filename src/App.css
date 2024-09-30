@@ -49,9 +49,8 @@ background: rgb(186 22 163) !important;
   transition: width 0.3s ease-in-out;
 }
 
-/* Expanded state when the input is focused */
 .search-expanded .form-control {
-  width: 300px; /* You can adjust this width */
+  width: 300px; 
 }
 .btn{
   background-color: rgb(186 22 163) !important;

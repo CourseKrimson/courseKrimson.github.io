@@ -3,8 +3,7 @@ import React, { useState } from "react";
 import { auth, db } from "./firebase";
 import { setDoc, doc } from "firebase/firestore";
 import { toast } from "react-toastify";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
-
+import { Link } from "react-router-dom"; 
 function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -39,7 +38,7 @@ function Register() {
 
   return (
     <>
-      {/* <Navbar/> */}
+  
       <form onSubmit={handleRegister} className="container mt-5 w-25">
         <h3>Sign Up</h3>
 

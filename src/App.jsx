@@ -49,13 +49,11 @@ function App() {
     <Router basename={import.meta.env.BASE_URL}>
       {/* <RedirectWithState /> */}
       <div className="App">
-        {/* Pass user status as loggedin prop to Navbar */}
         <Navbar loggedin={user ? 'true' : 'false'} />
         <div className="auth-wrapper">
           <div className="auth-inner">
            
             <Routes>
-              {/* Redirect to profile if the user is logged in */}
               <Route path="/" element={user ? <Navigate to="/profile" /> : <Login />} />
               <Route path="/home" element={<Home />} />
               <Route

@@ -10,8 +10,6 @@ const useQuery = () => {
 function SearchResults() {
   const query = useQuery();
   const searchTerm = query.get('query')?.toLowerCase() || '';
-
-  // Filter courses based on the search term
   const filteredCourses = Object.entries(courses).filter(([key, course]) =>
     course.title.toLowerCase().includes(searchTerm) ||
     course.description.toLowerCase().includes(searchTerm)

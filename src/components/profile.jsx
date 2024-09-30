@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { auth, db } from "./firebase";
 import { doc, getDoc } from "firebase/firestore";
-import Navbar from "./Navbar";
 function Profile() {
   const [userDetails, setUserDetails] = useState(null);
   const fetchUserData = async () => {
@@ -33,7 +32,6 @@ function Profile() {
   }
   return (
     <div className="text-center">
-      {/* <Navbar loggedin='true'></Navbar> */}
       {userDetails ? (
         <>
           <div style={{ display: "flex", justifyContent: "center" }}>
@@ -45,10 +43,7 @@ function Profile() {
           </div>
           <h3>Welcome, {userDetails.firstName} 🤗!</h3>
           <div>
-            <p>Email: {userDetails.email}</p>
-            {/* <p>First Name: {userDetails.firstName}</p> */}
-            {/* <p>Last Name: {userDetails.lastName}</p> */}
-            
+            <p>Email: {userDetails.email}</p> 
           </div>
           <button className="btn" onClick={handleLogout}>
             <i className="fa-solid fa-right-from-bracket"></i> Logout

@@ -6,9 +6,9 @@ export default function Footer() {
 
   return (
     <footer className=" text-center text-lg-start align-items-center fixed-bottom">
-      {/* Back and Forward Buttons */}
+    
       <div className="d-flex justify-content-between p-3">
-        {/* Back Button - Left Side */}
+       
         <button className="btn btn-secondary" onClick={() => navigate(-1)}>
           <i className="fa-solid fa-circle-left"></i> back
         </button>
@@ -21,9 +21,6 @@ export default function Footer() {
         </button>
       </div>
 
-      {/* Copyright */}
-
-      {/* Copyright */}
     </footer>
   );
 }

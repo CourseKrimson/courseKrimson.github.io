@@ -1,19 +1,17 @@
 import React, { useState } from 'react';
 import logo from '../assets/images/logo.png';
 import { Link, useNavigate } from 'react-router-dom';
-import courses from './courseData'; // Assuming this is your courses object
+import courses from './courseData'; 
 
 function Navbar({ loggedin }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [suggestions, setSuggestions] = useState([]);
   const navigate = useNavigate();
 
-  // Handle search input change
   const handleSearchChange = (event) => {
     const searchInput = event.target.value;
     setSearchTerm(searchInput);
 
-    // Convert courses object to an array for filtering
     const coursesArray = Object.values(courses);
 
     if (searchInput.trim()) {
@@ -26,16 +24,14 @@ function Navbar({ loggedin }) {
     }
   };
 
-  // Handle search submission when "Enter" is pressed
   const handleSearchSubmit = (event) => {
     event.preventDefault();
     if (searchTerm.trim()) {
       navigate(`/search?query=${encodeURIComponent(searchTerm)}`);
-      setSuggestions([]); // Clear suggestions after search
+      setSuggestions([]); 
     }
   };
 
-  // Handle suggestion click
   const handleSuggestionClick = (suggestion) => {
     setSearchTerm(suggestion.title);
     navigate(`/search?query=${encodeURIComponent(suggestion.title)}`);
@@ -75,10 +71,9 @@ function Navbar({ loggedin }) {
             </li>
           </ul>
 
-          {/* Profile or Sign up Button */}
           {loggedin === 'true' ? (
             <div className="d-flex align-items-center flex-column flex-lg-row">
-              {/* Search Bar */}
+             
               <div className="me-2 mb-2 mb-lg-0 position-relative">
                 <form className="input-group" onSubmit={handleSearchSubmit}>
                   <span className="input-group-text" id="basic-addon1">
@@ -95,7 +90,6 @@ function Navbar({ loggedin }) {
                   />
                 </form>
 
-                {/* Suggestions Dropdown */}
                 {suggestions.length > 0 && (
                   <ul className="list-group position-absolute w-100 mt-1 z-index-1000" style={{ zIndex: '1000' }}>
                     {suggestions.map((suggestion, index) => (
