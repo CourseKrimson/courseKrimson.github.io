@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import logo from '../assets/images/logo.png';
-import { Link, useNavigate } from 'react-router-dom';
-import courses from './courseData'; 
+import React, { useState } from "react";
+import logo from "@/assets/images/logo.png";
+import { Link, useNavigate } from "react-router-dom";
+import courses from "@/data/courseData";
 
 function Navbar({ loggedin }) {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
   const [suggestions, setSuggestions] = useState([]);
   const navigate = useNavigate();
 
@@ -16,7 +16,7 @@ function Navbar({ loggedin }) {
 
     if (searchInput.trim()) {
       const filteredSuggestions = coursesArray.filter((course) =>
-        course.title.toLowerCase().includes(searchInput.toLowerCase())
+        course.title.toLowerCase().includes(searchInput.toLowerCase()),
       );
       setSuggestions(filteredSuggestions);
     } else {
@@ -28,7 +28,7 @@ function Navbar({ loggedin }) {
     event.preventDefault();
     if (searchTerm.trim()) {
       navigate(`/search?query=${encodeURIComponent(searchTerm)}`);
-      setSuggestions([]); 
+      setSuggestions([]);
     }
   };
 
@@ -41,43 +41,90 @@ function Navbar({ loggedin }) {
   return (
     <nav className="navbar navbar-expand-lg sticky-top bg-body-tertiary">
       <div className="container-fluid">
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarExample"
+          aria-controls="navbarExample"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <Link className="navbar-brand" to="/"><img src={logo} width="36" alt="Logo" className="rounded-circle" /></Link>
+        <Link className="navbar-brand" to="/">
+          <img src={logo} width="36" alt="Logo" className="rounded-circle" />
+        </Link>
         <div className="collapse navbar-collapse" id="navbarExample">
           <ul className="navbar-nav me-auto mb-0">
-            {loggedin === 'true' ? (
+            {loggedin === "true" ? (
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
+                <Link
+                  className="nav-link active"
+                  aria-current="page"
+                  to="/home"
+                >
+                  Home
+                </Link>
               </li>
             ) : (
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                <Link className="nav-link active" aria-current="page" to="/">
+                  Home
+                </Link>
               </li>
             )}
             <li className="nav-item">
-              <Link className="nav-link" aria-current="page" to="/events">Events</Link>
+              <Link className="nav-link" aria-current="page" to="/events">
+                Events
+              </Link>
             </li>
             <li className="nav-item dropdown">
-              <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</Link>
+              <Link
+                className="nav-link dropdown-toggle"
+                to="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Courses
+              </Link>
               <ul className="dropdown-menu">
-                <li><Link className="dropdown-item" to="/programming-languages">Programming Languages</Link></li>
-                <li><Link className="dropdown-item" to="/frameworks">Frameworks</Link></li>
-                <li><hr className="dropdown-divider" /></li>
-                <li><Link className="dropdown-item" to="/roadmaps">Roadmaps</Link></li>
+                <li>
+                  <Link className="dropdown-item" to="/programming-languages">
+                    Programming Languages
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/frameworks">
+                    Frameworks
+                  </Link>
+                </li>
+                <li>
+                  <hr className="dropdown-divider" />
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/roadmaps">
+                    Roadmaps
+                  </Link>
+                </li>
               </ul>
             </li>
           </ul>
 
-          {loggedin === 'true' ? (
+          {loggedin === "true" ? (
             <div className="d-flex align-items-center flex-column flex-lg-row">
-             
               <div className="me-2 mb-2 mb-lg-0 position-relative">
                 <form className="input-group" onSubmit={handleSearchSubmit}>
                   <span className="input-group-text" id="basic-addon1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      className="bi bi-search"
+                      viewBox="0 0 16 16"
+                    >
                       <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
                     </svg>
                   </span>
@@ -91,13 +138,16 @@ function Navbar({ loggedin }) {
                 </form>
 
                 {suggestions.length > 0 && (
-                  <ul className="list-group position-absolute w-100 mt-1 z-index-1000" style={{ zIndex: '1000' }}>
+                  <ul
+                    className="list-group position-absolute w-100 mt-1 z-index-1000"
+                    style={{ zIndex: "1000" }}
+                  >
                     {suggestions.map((suggestion, index) => (
                       <li
                         key={index}
                         className="list-group-item"
                         onClick={() => handleSuggestionClick(suggestion)}
-                        style={{ cursor: 'pointer' }}
+                        style={{ cursor: "pointer" }}
                       >
                         {suggestion.title}
                       </li>
@@ -105,10 +155,17 @@ function Navbar({ loggedin }) {
                   </ul>
                 )}
               </div>
-              <span><Link className="btn clk rounded-circle" to="/profile"><i className="fa-regular fa-user"></i></Link> Profile</span>
+              <span>
+                <Link className="btn clk rounded-circle" to="/profile">
+                  <i className="fa-regular fa-user"></i>
+                </Link>{" "}
+                Profile
+              </span>
             </div>
           ) : (
-            <Link className="btn btn-primary clk" to="/login">Sign up</Link>
+            <Link className="btn btn-primary clk" to="/login">
+              Sign up
+            </Link>
           )}
         </div>
       </div>
