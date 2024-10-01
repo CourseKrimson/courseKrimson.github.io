@@ -1,9 +1,9 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
-import { auth, db } from "./firebase";
+import { auth, db } from "@/services/firebase";
 import { setDoc, doc } from "firebase/firestore";
 import { toast } from "react-toastify";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -38,7 +38,6 @@ function Register() {
 
   return (
     <>
-  
       <form onSubmit={handleRegister} className="container mt-5 w-25">
         <h3>Sign Up</h3>
 
@@ -91,7 +90,8 @@ function Register() {
           </button>
         </div>
         <p className="forgot-password text-right">
-          Already registered? <Link to="/login">Login</Link> {/* Use Link here */}
+          Already registered? <Link to="/login">Login</Link>{" "}
+          {/* Use Link here */}
         </p>
       </form>
     </>

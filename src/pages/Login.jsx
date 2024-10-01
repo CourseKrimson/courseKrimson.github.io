@@ -1,8 +1,8 @@
 import { signInWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
-import { auth } from "./firebase";
+import { auth } from "@/services/firebase";
 import { toast } from "react-toastify";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -13,7 +13,7 @@ function Login() {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       console.log("User logged in Successfully");
-      window.location.href = "/profile"; 
+      window.location.href = "/profile";
       toast.success("User logged in Successfully", {
         position: "top-center",
       });
@@ -58,7 +58,8 @@ function Login() {
           </button>
         </div>
         <p className="forgot-password text-right">
-          New user? <Link to="/register">Register Here</Link> {/* Use Link here */}
+          New user? <Link to="/register">Register Here</Link>{" "}
+          {/* Use Link here */}
         </p>
         {/* <SignInwithGoogle/> */}
       </form>
