@@ -1,7 +1,7 @@
-import React from "react";
-import { useLocation } from "react-router-dom";
-import courses from "@/data/courseData"; // Ensure the path is correct
-import { Link } from "react-router-dom";
+import React from 'react';
+import { useLocation } from 'react-router-dom';
+import courses from '@/data/courseData'; // Ensure the path is correct
+import { Link } from 'react-router-dom';
 
 const useQuery = () => {
   return new URLSearchParams(useLocation().search);
@@ -9,11 +9,11 @@ const useQuery = () => {
 
 function SearchResults() {
   const query = useQuery();
-  const searchTerm = query.get("query")?.toLowerCase() || "";
+  const searchTerm = query.get('query')?.toLowerCase() || '';
   const filteredCourses = Object.entries(courses).filter(
     ([key, course]) =>
       course.title.toLowerCase().includes(searchTerm) ||
-      course.description.toLowerCase().includes(searchTerm),
+      course.description.toLowerCase().includes(searchTerm)
   );
 
   return (

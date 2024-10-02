@@ -1,14 +1,14 @@
-import { createUserWithEmailAndPassword } from "firebase/auth";
-import React, { useState } from "react";
-import { auth, db } from "@/services/firebase";
-import { setDoc, doc } from "firebase/firestore";
-import { toast } from "react-toastify";
-import { Link } from "react-router-dom";
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+import React, { useState } from 'react';
+import { auth, db } from '@/services/firebase';
+import { setDoc, doc } from 'firebase/firestore';
+import { toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
 function Register() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [fname, setFname] = useState("");
-  const [lname, setLname] = useState("");
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [fname, setFname] = useState('');
+  const [lname, setLname] = useState('');
 
   const handleRegister = async (e) => {
     e.preventDefault();
@@ -17,21 +17,21 @@ function Register() {
       const user = auth.currentUser;
       console.log(user);
       if (user) {
-        await setDoc(doc(db, "Users", user.uid), {
+        await setDoc(doc(db, 'Users', user.uid), {
           email: user.email,
           firstName: fname,
           lastName: lname,
-          photo: "",
+          photo: '',
         });
       }
-      console.log("User Registered Successfully!!");
-      toast.success("User Registered Successfully!!", {
-        position: "top-center",
+      console.log('User Registered Successfully!!');
+      toast.success('User Registered Successfully!!', {
+        position: 'top-center',
       });
     } catch (error) {
       console.log(error.message);
       toast.error(error.message, {
-        position: "bottom-center",
+        position: 'bottom-center',
       });
     }
   };
@@ -90,7 +90,7 @@ function Register() {
           </button>
         </div>
         <p className="forgot-password text-right">
-          Already registered? <Link to="/login">Login</Link>{" "}
+          Already registered? <Link to="/login">Login</Link>{' '}
           {/* Use Link here */}
         </p>
       </form>

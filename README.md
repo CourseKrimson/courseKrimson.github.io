@@ -29,9 +29,11 @@
 git clone https://github.com/CourseKrimson/courseKrimson.github.io.git
 
 # Navigate to project folder
+
 cd courseKrimson.github.io
 
 # Install dependencies
+
 npm install
 </code></pre>
 

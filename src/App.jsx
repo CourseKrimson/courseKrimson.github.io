@@ -1,25 +1,26 @@
-import { useEffect, useState } from "react";
-import "./styles/App.css";
-import "./styles/index.css";
+import { useEffect, useState } from 'react';
+import './styles/App.css';
+import './styles/index.css';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Navigate,
-} from "react-router-dom";
-import SearchResults from "./pages/Search";
-import Login from "./pages/Login";
-import SignUp from "./pages/Register";
-import Home from "./pages/Home";
-import Profile from "./pages/Profile";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { auth } from "./services/firebase";
-import Navbar from "./components/Navbar";
-import CourseDetail from "./pages/CourseDetail";
-import Dashboard from "./pages/Dashboard";
-import courses from "./data/courseData";
-import Footer from "./components/Footer";
+} from 'react-router-dom';
+import SearchResults from './pages/Search';
+import Login from './pages/Login';
+import SignUp from './pages/Register';
+import Home from './pages/Home';
+import Profile from './pages/Profile';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { auth } from './services/firebase';
+import Navbar from './components/Navbar';
+import CourseDetail from './pages/CourseDetail';
+import Dashboard from './pages/Dashboard';
+import courses from './data/courseData';
+import Footer from './components/Footer';
+import Contributors from './pages/GithubFetch';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -47,7 +48,7 @@ function App() {
     <Router basename={import.meta.env.BASE_URL}>
       {/* <RedirectWithState /> */}
       <div className="App">
-        <Navbar loggedin={user ? "true" : "false"} />
+        <Navbar loggedin={user ? 'true' : 'false'} />
         <div className="auth-wrapper">
           <div className="auth-inner">
             <Routes>
@@ -68,6 +69,7 @@ function App() {
               <Route path="/courses/:courseName" element={<CourseDetail />} />
               <Route path="/" element={<Dashboard courses={courses} />} />
               <Route path="/search" element={<SearchResults />} />
+              <Route path="/contributors" element={<Contributors />}></Route>
             </Routes>
             <ToastContainer />
           </div>

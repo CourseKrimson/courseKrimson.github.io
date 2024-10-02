@@ -15,8 +15,12 @@ function Dashboard({ courses }) {
           {Object.entries(courses).map(([key, course], index) => (
             <div className="col" key={index}>
               <div className="card h-100">
-                <Link to={`/courses/${key}`} className='lnk'>
-                  <img src={course.image} className="card-img-top" alt={course.title} />
+                <Link to={`/courses/${key}`} className="lnk">
+                  <img
+                    src={course.image}
+                    className="card-img-top"
+                    alt={course.title}
+                  />
                   <div className="card-body">
                     <h5 className="card-title">{course.title}</h5>
                     <p className="card-text">{course.description}</p>
