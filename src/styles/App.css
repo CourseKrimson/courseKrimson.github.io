@@ -1,7 +1,6 @@
-.App {
-  /* text-align: center; */
+:root {
+  --primary: rgb(186 22 163);
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -24,11 +23,11 @@
   color: white;
 }
 .lnk {
-    color: rgb(186 22 163) ;
-    text-decoration: none ;
+  color: var(--primary);
+  text-decoration: none;
 }
-.clk{
-background: rgb(186 22 163) !important;
+.clk {
+  background: var(--primary) !important;
 }
 
 .App-link {
@@ -43,15 +42,14 @@ background: rgb(186 22 163) !important;
     transform: rotate(360deg);
   }
 }
-/* Default state for search input */
 .input-group .form-control {
   width: 150px;
   transition: width 0.3s ease-in-out;
 }
 
 .search-expanded .form-control {
-  width: 300px; 
+  width: 300px;
 }
-.btn{
-  background-color: rgb(186 22 163) !important;
+.btn {
+  background-color: var(--primary) !important;
 }

@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import logo from "@/assets/images/logo.png";
-import { Link, useNavigate } from "react-router-dom";
-import courses from "@/data/courseData";
+import React, { useState } from 'react';
+import logo from '@/assets/images/logo.png';
+import { Link, useNavigate } from 'react-router-dom';
+import courses from '@/data/courseData';
 
 function Navbar({ loggedin }) {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState('');
   const [suggestions, setSuggestions] = useState([]);
   const navigate = useNavigate();
 
@@ -16,7 +16,7 @@ function Navbar({ loggedin }) {
 
     if (searchInput.trim()) {
       const filteredSuggestions = coursesArray.filter((course) =>
-        course.title.toLowerCase().includes(searchInput.toLowerCase()),
+        course.title.toLowerCase().includes(searchInput.toLowerCase())
       );
       setSuggestions(filteredSuggestions);
     } else {
@@ -57,7 +57,7 @@ function Navbar({ loggedin }) {
         </Link>
         <div className="collapse navbar-collapse" id="navbarExample">
           <ul className="navbar-nav me-auto mb-0">
-            {loggedin === "true" ? (
+            {loggedin === 'true' ? (
               <li className="nav-item">
                 <Link
                   className="nav-link active"
@@ -112,7 +112,7 @@ function Navbar({ loggedin }) {
             </li>
           </ul>
 
-          {loggedin === "true" ? (
+          {loggedin === 'true' ? (
             <div className="d-flex align-items-center flex-column flex-lg-row">
               <div className="me-2 mb-2 mb-lg-0 position-relative">
                 <form className="input-group" onSubmit={handleSearchSubmit}>
@@ -140,14 +140,14 @@ function Navbar({ loggedin }) {
                 {suggestions.length > 0 && (
                   <ul
                     className="list-group position-absolute w-100 mt-1 z-index-1000"
-                    style={{ zIndex: "1000" }}
+                    style={{ zIndex: '1000' }}
                   >
                     {suggestions.map((suggestion, index) => (
                       <li
                         key={index}
                         className="list-group-item"
                         onClick={() => handleSuggestionClick(suggestion)}
-                        style={{ cursor: "pointer" }}
+                        style={{ cursor: 'pointer' }}
                       >
                         {suggestion.title}
                       </li>
@@ -155,15 +155,24 @@ function Navbar({ loggedin }) {
                   </ul>
                 )}
               </div>
-              <span>
-                <Link className="btn clk rounded-circle" to="/profile">
+              <span className="me-3">
+                <Link
+                  className="btn clk rounded-circle"
+                  to="/profile"
+                  data-bs-toggle="tooltip"
+                  title="Profile"
+                >
                   <i className="fa-regular fa-user"></i>
-                </Link>{" "}
-                Profile
+                </Link>
+              </span>
+              <span className="me-3">
+                <Link className="nav-link" to="/contributors">
+                  Contributors✨
+                </Link>
               </span>
             </div>
           ) : (
-            <Link className="btn btn-primary clk" to="/login">
+            <Link className="btn clk" to="/login">
               Sign up
             </Link>
           )}

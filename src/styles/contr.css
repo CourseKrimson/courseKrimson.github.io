@@ -1,0 +1,38 @@
+.shining-card {
+  position: relative;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.shining-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  /* background: linear-gradient(90deg, transparent, var(--primary), transparent); */
+  border-image: linear-gradient(90deg, var(--primary), transparent) 1;
+  animation: shine-clockwise 3s infinite linear;
+}
+
+@keyframes shine-clockwise {
+  0% {
+    border-image-source: linear-gradient(90deg, var(--primary), transparent);
+  }
+  25% {
+    border-image-source: linear-gradient(180deg, var(--primary), transparent);
+  }
+  50% {
+    border-image-source: linear-gradient(270deg, var(--primary), transparent);
+  }
+  75% {
+    border-image-source: linear-gradient(360deg, var(--primary), transparent);
+  }
+  100% {
+    border-image-source: linear-gradient(90deg, var(--primary), transparent);
+  }
+}
