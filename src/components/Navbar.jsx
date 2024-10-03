@@ -2,18 +2,14 @@ import React, { useEffect, useState } from 'react';
 import logo from '@/assets/images/logo.png';
 import { Link, useNavigate } from 'react-router-dom';
 import courses from '@/data/courseData';
+import { useTheme } from '@/context/ThemeContext';
+
 
 function Navbar({ loggedin }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [suggestions, setSuggestions] = useState([]);
-  const [theme, setTheme] = useState('light');
+  const { theme, toggleTheme } = useTheme();
   const navigate = useNavigate();
-
-  const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-    document.body.setAttribute('data-bs-theme', newTheme)
-  };
 
   const handleSearchChange = (event) => {
     const searchInput = event.target.value;
@@ -44,11 +40,6 @@ function Navbar({ loggedin }) {
     navigate(`/search?query=${encodeURIComponent(suggestion.title)}`);
     setSuggestions([]);
   };
-
-  useEffect(() => {
-    document.body.setAttribute('data-bs-theme', theme);
-  }, []);
-
 
   return (
     <nav className={`navbar navbar-expand-lg sticky-top bg-body-tertiary navbar-${theme}`}>
