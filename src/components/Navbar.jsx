@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from '@/assets/images/logo.png';
 import { Link, useNavigate } from 'react-router-dom';
 import courses from '@/data/courseData';
@@ -6,7 +6,14 @@ import courses from '@/data/courseData';
 function Navbar({ loggedin }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [suggestions, setSuggestions] = useState([]);
+  const [theme, setTheme] = useState('light');
   const navigate = useNavigate();
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    document.body.setAttribute('data-bs-theme', newTheme)
+  };
 
   const handleSearchChange = (event) => {
     const searchInput = event.target.value;
@@ -38,8 +45,13 @@ function Navbar({ loggedin }) {
     setSuggestions([]);
   };
 
+  useEffect(() => {
+    document.body.setAttribute('data-bs-theme', theme);
+  }, []);
+
+
   return (
-    <nav className="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+    <nav className={`navbar navbar-expand-lg sticky-top bg-body-tertiary navbar-${theme}`}>
       <div className="container-fluid">
         <button
           className="navbar-toggler"
@@ -114,6 +126,20 @@ function Navbar({ loggedin }) {
 
           {loggedin === 'true' ? (
             <div className="d-flex align-items-center flex-column flex-lg-row">
+              <span className="me-3">
+                <button
+                  className="btn clk rounded-circle"
+                  onClick={toggleTheme}
+                  data-bs-toggle="tooltip"
+                  title={`Switch to ${theme === 'light' ? 'Dark' : 'Light'} Mode`}
+                >
+                  {theme === 'light' ? (
+                    <i className="fa-solid fa-moon"></i>
+                  ) : (
+                    <i className="fa-solid fa-sun"></i>
+                  )}
+                </button>
+              </span>
               <div className="me-2 mb-2 mb-lg-0 position-relative">
                 <form className="input-group" onSubmit={handleSearchSubmit}>
                   <span className="input-group-text" id="basic-addon1">

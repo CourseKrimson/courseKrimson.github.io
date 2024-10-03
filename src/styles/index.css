@@ -7,3 +7,13 @@
   justify-content: center;
   align-items: center;
 }
+
+[data-bs-theme="dark"] {
+  --bs-body-color: #f8f9fa;
+  --bs-body-bg: #212529;
+}
+
+[data-bs-theme="light"] {
+  --bs-body-color: #212529;
+  --bs-body-bg: #f8f9fa;
+}
