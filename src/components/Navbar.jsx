@@ -123,23 +123,23 @@ function Navbar({ loggedin }) {
               </ul>
             </li>
           </ul>
-
+          <span className="me-3">
+            <button
+              className="btn clk rounded-circle"
+              onClick={toggleTheme}
+              data-bs-toggle="tooltip"
+              title={`Switch to ${theme === 'light' ? 'Dark' : 'Light'} Mode`}
+            >
+              {theme === 'light' ? (
+                <i className="fa-solid fa-moon"></i>
+              ) : (
+                <i className="fa-solid fa-sun"></i>
+              )}
+            </button>
+          </span>
           {loggedin === 'true' ? (
             <div className="d-flex align-items-center flex-column flex-lg-row">
-              <span className="me-3">
-                <button
-                  className="btn clk rounded-circle"
-                  onClick={toggleTheme}
-                  data-bs-toggle="tooltip"
-                  title={`Switch to ${theme === 'light' ? 'Dark' : 'Light'} Mode`}
-                >
-                  {theme === 'light' ? (
-                    <i className="fa-solid fa-moon"></i>
-                  ) : (
-                    <i className="fa-solid fa-sun"></i>
-                  )}
-                </button>
-              </span>
+
               <div className="me-2 mb-2 mb-lg-0 position-relative">
                 <form className="input-group" onSubmit={handleSearchSubmit}>
                   <span className="input-group-text" id="basic-addon1">
