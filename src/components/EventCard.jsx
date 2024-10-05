@@ -16,7 +16,7 @@ function EventCard({ eventDetails }) {
             <p className="card-text">{eventDetails.event_description}</p>
           </div>
           <div className="card-footer text-center">
-            <button className="btn btn-primary">View Details</button>
+            <button className="btn">View Details</button>
           </div>
         </div>
       </div>
