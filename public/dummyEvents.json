@@ -1,0 +1,112 @@
+[
+  {
+    "event_id": 1,
+    "event_title": "React Hackathon",
+    "event_date": {
+      "day": "5",
+      "month": "Oct",
+      "year": "2024"
+    },
+    "event_description": "A 48-hour hackathon focused on building innovative projects using React.",
+    "event_image": "https://example.com/react-hackathon.jpg"
+  },
+  {
+    "event_id": 2,
+    "event_title": "Hacktoberfest Kickoff",
+    "event_date": {
+      "day": "10",
+      "month": "Oct",
+      "year": "2024"
+    },
+    "event_description": "Join open-source contributors to celebrate the start of Hacktoberfest with exciting challenges and prizes.",
+    "event_image": "https://example.com/hacktoberfest-kickoff.jpg"
+  },
+  {
+    "event_id": 3,
+    "event_title": "GSSoC Final Submissions",
+    "event_date": {
+      "day": "25",
+      "month": "Mar",
+      "year": "2024"
+    },
+    "event_description": "Final day for participants to submit their code contributions for the GirlScript Summer of Code 2024.",
+    "event_image": "https://example.com/gssoc-submissions.jpg"
+  },
+  {
+    "event_id": 4,
+    "event_title": "API Design Workshop",
+    "event_date": {
+      "day": "18",
+      "month": "Nov",
+      "year": "2024"
+    },
+    "event_description": "Learn best practices in API design for modern web applications in this hands-on workshop.",
+    "event_image": "https://example.com/api-design-workshop.jpg"
+  },
+  {
+    "event_id": 5,
+    "event_title": "Hacktoberfest Closing Ceremony",
+    "event_date": {
+      "day": "31",
+      "month": "Oct",
+      "year": "2024"
+    },
+    "event_description": "Celebrate the end of Hacktoberfest with a recap of the top contributors and projects.",
+    "event_image": "https://example.com/hacktoberfest-closing.jpg"
+  },
+  {
+    "event_id": 6,
+    "event_title": "JavaScript Deep Dive Meetup",
+    "event_date": {
+      "day": "12",
+      "month": "Nov",
+      "year": "2024"
+    },
+    "event_description": "Explore advanced JavaScript concepts in this interactive meetup session.",
+    "event_image": "https://example.com/js-deep-dive.jpg"
+  },
+  {
+    "event_id": 7,
+    "event_title": "GSSoC Mentorship Day",
+    "event_date": {
+      "day": "15",
+      "month": "Dec",
+      "year": "2024"
+    },
+    "event_description": "A day dedicated to mentoring new contributors as part of the GirlScript Summer of Code program.",
+    "event_image": "https://example.com/gssoc-mentorship.jpg"
+  },
+  {
+    "event_id": 8,
+    "event_title": "Hacktoberfest Project Showcase",
+    "event_date": {
+      "day": "22",
+      "month": "Oct",
+      "year": "2024"
+    },
+    "event_description": "Participants present their projects from Hacktoberfest in this showcase event.",
+    "event_image": "https://example.com/hacktoberfest-showcase.jpg"
+  },
+  {
+    "event_id": 9,
+    "event_title": "Full-Stack JavaScript Webinar",
+    "event_date": {
+      "day": "2",
+      "month": "Dec",
+      "year": "2024"
+    },
+    "event_description": "Learn full-stack development using JavaScript with real-world examples and expert guidance.",
+    "event_image": "https://example.com/full-stack-js-webinar.jpg"
+  },
+  {
+    "event_id": 10,
+    "event_title": "React Native Bootcamp",
+    "event_date": {
+      "day": "7",
+      "month": "Nov",
+      "year": "2024"
+    },
+    "event_description": "An intensive bootcamp for developers looking to dive deep into React Native for mobile app development.",
+    "event_image": "https://example.com/react-native-bootcamp.jpg"
+  }
+]

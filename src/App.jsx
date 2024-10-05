@@ -21,6 +21,7 @@ import Dashboard from './pages/Dashboard';
 import courses from './data/courseData';
 import Footer from './components/Footer';
 import Contributors from './pages/GithubFetch';
+import Events from './pages/Events';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -70,6 +71,7 @@ function App() {
               <Route path="/" element={<Dashboard courses={courses} />} />
               <Route path="/search" element={<SearchResults />} />
               <Route path="/contributors" element={<Contributors />}></Route>
+              <Route path="/events" element={<Events />} />
             </Routes>
             <ToastContainer />
           </div>
