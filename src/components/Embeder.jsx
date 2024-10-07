@@ -1,7 +1,7 @@
 import React from 'react';
 
-const YouTubeEmbed = ({ videoId }) => {
-  const videoUrl = `https://www.youtube.com/embed/${videoId}`;
+const Embeder= ({ videoId }) => {
+  const videoUrl = `${videoId}`;
 
   return (
     <div
@@ -30,4 +30,4 @@ const YouTubeEmbed = ({ videoId }) => {
   );
 };
 
-export default YouTubeEmbed;
+export default Embeder;
