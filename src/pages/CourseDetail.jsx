@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import courses from '@/data/courseData';
 import { marked } from 'marked';
-import YouTubeEmbed from '@/components/YouTubeEmbed';
+import YouTubeEmbed from '@/components/Embeder';
 
 function CourseDetail() {
   const { courseName } = useParams();
@@ -23,11 +23,11 @@ function CourseDetail() {
         console.error('Error fetching the markdown file:', error)
       );
   }, [course.contentFile]);
-
+  console.table(course)
   return (
     <div className="container mt-5">
       <h1>{course.title}</h1>
-      <YouTubeEmbed videoId={course.ytb_vid}></YouTubeEmbed>
+      <YouTubeEmbed videoId={course.embed_link}></YouTubeEmbed>
       <p>{course.description}</p>
       <div dangerouslySetInnerHTML={{ __html: content }} />
     </div>

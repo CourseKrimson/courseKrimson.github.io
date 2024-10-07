@@ -4,7 +4,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/00BCD4/fff&text=ZSH+Setup', // Cyan
     description: 'Enhance your terminal experience with OH MY ZSH.',
-    ytb_vid: 'dCdX5v3IU60',
+    embed_link: 'https://www.youtube.com/embed/dCdX5v3IU60',
     contentFile: 'course1.md',
   },
   'course 2: getting started with cli': {
@@ -12,7 +12,15 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/FF9800/fff&text=CLI+PART+1', // Orange
     description: 'Kick your journey with CLI',
-    ytb_vid: 'B4b9pX1lqU4',
+    embed_link: 'https://www.youtube.com/embed/B4b9pX1lqU4',
+    contentFile: 'course2.md',
+  },
+  'course 3: getting started with cli': {
+    title: 'Course 3: Introduction to Bourne Shell',
+    author: 'Dev Gautam Kumar',
+    image: 'https://dummyimage.com/600x400/fff&text=B0urn3+$h3ll', // Orange
+    description: 'Get started with Shell Scripts',
+    embed_link: 'https://www.canva.com/design/DAGS2jSbGgI/NHrTUX9491PY9e31licHrA/view?embed',
     contentFile: 'course2.md',
   },
 };
