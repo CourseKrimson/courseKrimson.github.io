@@ -6,7 +6,11 @@ function Events() {
   const { data: events, error, loading } = useCallApi('dummyEvents.json');
 
   if (loading) {
-    return <p>Loading...</p>;
+    return (
+      <div className="spinner-border text-primary" role="status">
+          <span className="visually-hidden">Loading...</span>
+        </div>
+      );
   }
 
   if (error) {
