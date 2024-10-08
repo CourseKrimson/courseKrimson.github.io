@@ -7,7 +7,7 @@ function Events() {
 
   if (loading) {
     return (
-      <div className="spinner-border text-primary" role="status">
+      <div className="text-center flex-cen spinner-border text-primary" role="status">
           <span className="visually-hidden">Loading...</span>
         </div>
       );
