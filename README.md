@@ -1,4 +1,4 @@
-<h1>CourseKrimson</h1>
+ <h1>CourseKrimson</h1>
 
 <p>Welcome to <strong>CourseKrimson</strong>! This project provides a simple platform to showcase various tech-related courses. Contributors can add or modify courses in the <code>courseData.js</code> file, following a consistent structure.</p>
 
