@@ -21,7 +21,7 @@ const courses = {
     image: 'https://dummyimage.com/600x400/FF9800/fff&text=Playing+in+the+Shell', // Orange
     description: 'Get famiiar with UNIX Shell',
     embed_link: 'https://www.canva.com/design/DAGTIaBPhDM/a_G7XN1OSANZPmkoR_vLnQ/view?embed',
-    contentFile: 'course2.md',
+    contentFile: 'course3.md',
   },
   'course 4: getting started with cli': {
     title: 'Course 4: Introduction to Bourne Shell',
