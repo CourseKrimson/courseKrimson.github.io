@@ -1,5 +1,3 @@
-# Get Familiar with UNIX Shell
-
 ## Course Overview
 This course is designed for beginners to get acquainted with the UNIX shell. You'll learn fundamental concepts and principles essential for navigating and using the UNIX environment effectively.
 
