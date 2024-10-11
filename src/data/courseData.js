@@ -36,7 +36,7 @@ const courses = {
     author: 'Dev Gautam Kumar',
     image: 'https://dummyimage.com/600x400/8BC34A/fff&text=Bash+Scripting+Basics', // Green
     description: 'Learn the basics of Bash scripting and automate tasks.',
-    embed_link: 'https://www.youtube.com/embed/fA8gH6wDsm0',
+    embed_link: 'https://www.youtube.com/embed/SPwyp2NG-bE',
     contentFile: 'course5.md',
   }
 };
