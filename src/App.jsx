@@ -22,6 +22,9 @@ import courses from './data/courseData';
 import Footer from './components/Footer';
 import Contributors from './pages/GithubFetch';
 import Events from './pages/Events';
+import Programming from './pages/ProgrammingLanguage';
+import ProgrammingLanguage from './pages/ProgrammingLanguage';
+import CheatsheetDetail from './pages/CheatsheetDetail';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -72,6 +75,8 @@ function App() {
               <Route path="/search" element={<SearchResults />} />
               <Route path="/contributors" element={<Contributors />}></Route>
               <Route path="/events" element={<Events />} />
+              <Route path="/programming-languages" element={<ProgrammingLanguage />}/>
+              <Route path="/programming-languages/:cheatsheetName" element={<CheatsheetDetail/>}/>
             </Routes>
             <ToastContainer />
           </div>
