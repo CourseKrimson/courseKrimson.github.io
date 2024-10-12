@@ -1,54 +1,192 @@
-## JavaScript Cheatsheet
+# JavaScript Cheatsheet
 
-This cheatsheet covers essential **JavaScript** concepts, providing a quick reference guide for beginners who want to master JavaScript fundamentals.
+## 1. Variables
+- **`let`**: Declares a block-scoped variable.
+  ```js
+  let x = 5;
+  ```
+- **`const`**: Declares a constant block-scoped variable.
+  ```js
+  const pi = 3.14;
+  ```
+- **`var`**: Declares a function-scoped variable (legacy).
+  ```js
+  var name = "Dev";
+  ```
 
-## Learning Objectives
-- Understand JavaScript syntax and data types.
-- Work with variables and functions.
-- Learn about JavaScript's scope and closures.
-- Understand how to manipulate the DOM.
-- Explore asynchronous programming using promises and `async/await`.
-- Learn about ES6+ features like arrow functions, destructuring, and modules.
-- Implement object-oriented programming in JavaScript.
-- Utilize common array methods for data manipulation.
+## 2. Data Types
+- **String**:
+  ```js
+  let str = "Hello, World!";
+  ```
+- **Number**:
+  ```js
+  let num = 42;
+  ```
+- **Boolean**:
+  ```js
+  let isJavaScriptFun = true;
+  ```
+- **Array**:
+  ```js
+  let arr = [1, 2, 3, 4];
+  ```
 
-## Cheatsheet Outline
+- **Object**:
+  ```js
+  let person = {
+    name: "Dev",
+    age: 25
+  };
+  ```
 
-### Module 1: JavaScript Basics
-- Overview of JavaScript and its role in web development.
-- Data types and variables (`var`, `let`, `const`).
+## 3. Functions
+- **Function Declaration**:
+  ```js
+  function greet(name) {
+    return "Hello, " + name;
+  }
+  ```
 
-### Module 2: Functions and Scope
-- Creating functions and understanding their scope.
-- Arrow functions and their usage.
+- **Arrow Function**:
+  ```js
+  const greet = (name) => `Hello, ${name}`;
+  ```
 
-### Module 3: Control Flow
-- Using `if`, `else`, `switch`, and loops (`for`, `while`).
+## 4. Conditionals
+- **If-Else Statement**:
+  ```js
+  if (x > 10) {
+    console.log("x is greater than 10");
+  } else {
+    console.log("x is less than or equal to 10");
+  }
+  ```
 
-### Module 4: DOM Manipulation
-- Selecting and modifying HTML elements using JavaScript.
-- Understanding `querySelector` and `getElementById`.
+- **Switch Statement**:
+  ```js
+  switch (day) {
+    case "Monday":
+      console.log("It's Monday!");
+      break;
+    default:
+      console.log("It's not Monday.");
+  }
+  ```
 
-### Module 5: Asynchronous JavaScript
-- Introduction to callbacks, promises, and `async/await`.
-- Using `fetch` for making HTTP requests.
+## 5. Loops
+- **For Loop**:
+  ```js
+  for (let i = 0; i < 5; i++) {
+    console.log(i);
+  }
+  ```
 
-### Module 6: ES6+ Features
-- Using `let` and `const` for variable declarations.
-- Object and array destructuring.
-- Import/export modules.
+- **While Loop**:
+  ```js
+  let i = 0;
+  while (i < 5) {
+    console.log(i);
+    i++;
+  }
+  ```
 
-### Module 7: Object-Oriented JavaScript
-- Understanding objects, classes, and inheritance.
-- Creating and using classes in JavaScript.
+- **ForEach Loop (for arrays)**:
+  ```js
+  const arr = [1, 2, 3, 4];
+  arr.forEach(item => console.log(item));
+  ```
 
-### Module 8: Array Methods
-- Overview of common array methods like `map`, `filter`, `reduce`, and `forEach`.
-- Examples of using these methods for data transformation.
+## 6. Arrays and Methods
+- **Push and Pop**:
+  ```js
+  let fruits = ["apple", "banana"];
+  fruits.push("orange"); // ["apple", "banana", "orange"]
+  fruits.pop(); // ["apple", "banana"]
+  ```
 
-## Prerequisites
-- Basic understanding of HTML and CSS.
-- No prior programming experience is required.
+- **Map, Filter, and Reduce**:
+  ```js
+  let numbers = [1, 2, 3, 4];
+  let doubled = numbers.map(num => num * 2); // [2, 4, 6, 8]
+  let even = numbers.filter(num => num % 2 === 0); // [2, 4]
+  let sum = numbers.reduce((total, num) => total + num, 0); // 10
+  ```
 
-## Conclusion
-By the end of this cheatsheet, users will have a strong grasp of **JavaScript** fundamentals and be ready to build dynamic, interactive web applications.
+## 7. Object Methods
+- **Accessing Object Properties**:
+  ```js
+  let person = {
+    name: "Dev",
+    age: 25
+  };
+  console.log(person.name); // "Dev"
+  ```
+
+- **Adding Methods to Objects**:
+  ```js
+  let car = {
+    make: "Tesla",
+    model: "Model 3",
+    start: function() {
+      console.log("Car started");
+    }
+  };
+  car.start(); // "Car started"
+  ```
+
+## 8. Events (in a browser)
+- **Handling Click Events**:
+  ```html
+  <button onclick="alert('Button clicked!')">Click me</button>
+  ```
+
+- **Adding Event Listeners**:
+  ```js
+  document.querySelector("button").addEventListener("click", function() {
+    alert("Button clicked!");
+  });
+  ```
+
+## 9. Promises and Async-Await
+- **Promise**:
+  ```js
+  let promise = new Promise(function(resolve, reject) {
+    let success = true;
+    if (success) {
+      resolve("Promise fulfilled!");
+    } else {
+      reject("Promise rejected.");
+    }
+  });
+
+  promise.then(function(message) {
+    console.log(message);
+  });
+  ```
+
+- **Async-Await**:
+  ```js
+  async function fetchData() {
+    let response = await fetch('https://api.example.com/data');
+    let data = await response.json();
+    console.log(data);
+  }
+  ```
+
+## 10. DOM Manipulation
+- **Selecting Elements**:
+  ```js
+  let element = document.getElementById('myElement');
+  let elements = document.querySelectorAll('.myClass');
+  ```
+
+- **Changing Content**:
+  ```js
+  element.innerHTML = "New content!";
+  ```
+
+- **Changing Styles**:
+  ```js
+  element.style.color = "blue";
+  ```
