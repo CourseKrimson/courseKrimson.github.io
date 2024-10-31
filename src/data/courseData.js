@@ -59,7 +59,7 @@ const courses = {
     description: 'Hello there, I am dropping a Termux Guide mainly focused for Web Bug Hunting. It will help you to save time, esp if you are doing a full-time job like me. This might aid in your journey, especially to those who are starting this bug hunting journey on Android.',
     embed_link: 'https://dummyimage.com/600x400/8BC34A/fff&text=Termux+For+Web+Testing',
     contentFile: 'course6.md',
-  },
+  }
 };
 
 export default courses;
