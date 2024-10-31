@@ -33,11 +33,19 @@ const courses = {
   },
   'course 5: bash scripting basics': {
     title: 'Course 5: Bash Scripting Basics',
-    author: 'Dev Gautam Kumar',
+    author: 'Sangharsh',
     image: 'https://dummyimage.com/600x400/8BC34A/fff&text=Bash+Scripting+Basics', // Green
     description: 'Learn the basics of Bash scripting and automate tasks.',
     embed_link: 'https://www.youtube.com/embed/SPwyp2NG-bE',
     contentFile: 'course5.md',
+  },
+  'course 6: termux for web testing': {
+    title: 'Course 6: Termux For Web Testing',
+    author: 'Dev Gautam Kumar',
+    image: 'https://dummyimage.com/600x400/8BC34A/fff&text=Termux+For+Web+Testing', // Green
+    description: 'Hello there, I am dropping a Termux Guide mainly focused for Web Bug Hunting . It will help you to save time , esp if you are doing a full time Job like me. This might aid in your journey especially to those who are starting this bug hunting journey on Andorid.',
+    embed_link: 'https://dummyimage.com/600x400/8BC34A/fff&text=Termux+For+Web+Testing',
+    contentFile: 'course6.md',
   }
 };
 
